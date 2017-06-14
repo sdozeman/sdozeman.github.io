@@ -6,6 +6,7 @@
 // -------------------------
 h1, h2, h3, h4, h5, h6{
   color: @black;
+  text-transform: lowercase;
 	line-height: @headings-line-height;
 	font-family: @font-family-headings;
 	font-weight: @headings-font-weight;
@@ -33,3 +34,16 @@ a {
 }
 
 p { margin: 0 0 @padding-base 0; }
+
+.section--headline,
+.project--title {
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  display: inline-block;
+  box-shadow: inset 0px -5px 0px 0px @color2;
+
+    &.reversed {
+      box-shadow: inset 0px -5px 0px 0px @color4;
+    }
+}

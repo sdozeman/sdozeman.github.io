@@ -21,13 +21,10 @@
           <nav class="site--navigation">
             <ul class="site--navigation-menu">
               <li class="site--navigation-menu-item">
-                <a href="/about" class="site--navigation-menu-url">Experience</a>
+                <a href="#sec-2" class="site--navigation-menu-url">About</a>
               </li>
               <li class="site--navigation-menu-item">
-                <a href="/about" class="site--navigation-menu-url">Work</a>
-              </li>
-              <li class="site--navigation-menu-item">
-                <a href="/about" class="site--navigation-menu-url">Contact</a>
+                <a href="#sec-3" class="site--navigation-menu-url">Projects</a>
               </li>
             </ul>
           </nav>
@@ -35,23 +32,77 @@
       </header>
 
       <main class="site-content">
-          <div class="site--hero">
-            <div class="site--hero-background">
-              <div class="bg-layer-1" data-parallaxify-range-x="-40" data-parallaxify-range-y="-20"></div>
-              <div class="bg-layer-2" data-parallaxify-range-x="5" data-parallaxify-range-y="5"></div>
-              <div class="bg-layer-3" data-parallaxify-range-x="20" data-parallaxify-range-y="10"></div>
-            </div>
+        <article class="site--hero" id="sec-1">
+          <div class="site--hero-background">
+            <div class="bg-layer-1" data-parallaxify-range-x="-40" data-parallaxify-range-y="-20"></div>
+            <div class="bg-layer-2" data-parallaxify-range-x="5" data-parallaxify-range-y="5"></div>
+            <div class="bg-layer-3" data-parallaxify-range-x="20" data-parallaxify-range-y="10"></div>
+          </div>
 
-            <div class="container">
-              <div class="site--hero-intro">
-                <h1 class="main-headline">Front-end developer.</h1>
-                <p class="sub-headline">Optimized, organic, semantic code. User-centered, scalable solutions and experiences that work in every browser and on every screen size.<br><br>I’m Sean, this is what I do.</p>
-              </div>
+          <div class="container">
+            <div class="site--hero-intro">
+              <h1 class="main-headline">Front-end developer.</h1>
+              <p class="sub-headline">Optimized, organic, semantic code. User-centered, scalable solutions and experiences that work in every browser and on every screen size.<br><br>I’m Sean, this is what I do.</p>
             </div>
           </div>
+        </article>
+
+        <article class="site--about" id="sec-2">
+          <div class="container">
+            <h2 class="section--headline reversed">About</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla accumsan interdum. Mauris facilisis malesuada urna non ultricies. Integer lobortis, ipsum quis placerat semper, orci nisl euismod odio, eget ullamcorper erat odio at justo. Aliquam tempor massa urna, vitae tempus felis volutpat sit amet. Praesent nunc eros, venenatis id dictum vitae, cursus eget libero. Quisque porttitor arcu velit, sed fringilla augue fermentum eleifend. Aliquam eget interdum ipsum. Phasellus mollis id est vel posuere. Aliquam tempus varius lacinia. Nunc faucibus, metus interdum euismod interdum, dolor ipsum tincidunt tortor, a finibus sapien tortor at ipsum. In sed dui sit amet velit bibendum rutrum. Aliquam placerat feugiat venenatis. Sed vel sapien pretium, mollis dolor quis, sollicitudin massa. Pellentesque augue dui, tempor pellentesque massa dignissim, varius rhoncus nibh.</p>
+          </div>
+        </article>
+
+        <article class="site--work" id="sec-3">
+          <div class="container">
+            <h2 class="section--headline">Projects</h2>
+              <div class="container slim">
+                <a href="#" class="project project--1">
+                  <div class="project--block">
+                    <span class="project--teaser" style="background: url(img/project-images/project-placeholder-1.jpg) center center no-repeat; background-size: cover;"></span>
+                    <h3 class="project--title reversed">Project Title</h3>
+                    <span class="project--brief">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas fringilla accumsan interdum.
+                      Mauris facilisis malesuada urna non ultricies.</p>
+                    </span>
+                  </div>
+                </a>
+
+                <a href="#" class="project project--2">
+                  <div class="project--block">
+                    <span class="project--teaser" style="background: url(img/project-images/project-placeholder-2.jpg) center center no-repeat; background-size: cover;"></span>
+                    <h3 class="project--title">Project Title</h3>
+                    <span class="project--brief">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas fringilla accumsan interdum.
+                      Mauris facilisis malesuada urna non ultricies.</p>
+                    </span>
+                  </div>
+                </a>
+
+                <a href="#" class="project project--3">
+                  <div class="project--block">
+                    <span class="project--teaser" style="background: url(img/project-images/project-placeholder-3.jpg) center center no-repeat; background-size: cover;"></span>
+                    <h3 class="project--title reversed">Project Title</h3>
+                    <span class="project--brief">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas fringilla accumsan interdum.
+                      Mauris facilisis malesuada urna non ultricies.</p>
+                    </span>
+                  </div>
+                </a>
+              </div>
+          </div>
+        </article>
       </main>
+
       <footer class="site-footer">
-        <!-- This is a footer. Someday. -->
+        <div class="container">
+          <p>Please note this website is currently under active development - content, functionality, code and design are all being tested and tailored as the build progresses. Please come back soon and see how it's coming. </p>
+          &copy 2017 - Sean Dozeman
+        </div>
       </footer>
     </section>
     <script src="js/jquery.min.js"></script>

@@ -4,18 +4,32 @@
 @import "base/fonts.less";
 @import "base/global.less";
 
+@import "structure/flexboxgrid.less";
 @import "structure/site-header.less";
+@import "structure/site-footer.less";
 @import "structure/site-content.less";
 @import "structure/site-hero.less";
-
+@import "structure/site-about.less";
+@import "structure/site-work.less";
 
 .container {
   width: 100%;
   .center-block;
   max-width: 1040px;
   padding: 0px 20px;
+  position: relative;
+
+    &.slim {
+      padding: 0 10px;
+      max-width: 800px;
+      border: 1px solid rgba(red(@color5),green(@color5),blue(@color5), .25);
+      border-bottom: none;
+      border-top: none;
+    }
 }//.container
 
-.page {
-  min-height: 1500px;
+.site-content {
+  background: @white;
+  position: relative;
+  z-index: @zindex-base;
 }
