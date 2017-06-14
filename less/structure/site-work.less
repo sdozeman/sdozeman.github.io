@@ -1,7 +1,20 @@
 .site--work {
-  padding: 60px 0;
+  padding: 80px 0;
+  position: relative;
   margin-bottom: 250px;
   background: @gray-lighter;
+
+    &:after {
+      left:0;
+      width:100%;
+      bottom:-20px;
+      content: " ";
+      display:block;
+      position:absolute;
+      border-style: solid;
+      border-width: 0 100vw 20px 0;
+      border-color: transparent @gray-lighter transparent transparent;
+    }
 
     .project {
       color: @white;
@@ -20,22 +33,22 @@
           &:before {
             right: 0;
             bottom: 0;
+            opacity: 0;
             content: "";
-            height: 60%;
             left: -100%;
-            opacity: .75;
             z-index: 500;
             display: block;
             background: @black;
             position: absolute;
-            transform: skewY(15deg);
+            transform: skewY(1deg);
+            transition: all .5s ease;
             transform-origin: 0 100% 0;
-            transition: all .5s ease .5s;
+            height: calc(~"45% - 40px");
           }
 
           .project--title {
             top: 40px;
-            left: 40px;
+            right: 40px;
             color: @white;
             position: absolute;
           }
@@ -45,22 +58,22 @@
             left: 0;
             right: 0;
             bottom: 0;
-            opacity: .35;
+            opacity: .25;
             display: block;
             position: absolute;
-            transition: all .25s ease;
+            transition: all .25s ease .25s;
           }
 
           .project--brief {
-            width: 50%;
+            width: 66%;
             left: 40px;
             opacity: 0;
-            bottom: 20px;
+            bottom: 40px;
             font-size: 18px;
             position: absolute;
             transform: translateY(20px);
             z-index: (@zindex-base * 2);
-            transition: all .5s ease;
+            transition: all .35s ease;
           }
 
 
@@ -71,11 +84,14 @@
 
           .project--block {
             &:before {
-              left: 0;
-              right: -100%;
-              transform: skewY(-15deg);
+              transform: skewY(-1deg);
               transform-origin: 100% 0;
             }
+
+              .project--title {
+                left: 40px;
+                right: auto;
+              }
 
               .project--brief {
                 left: auto;
@@ -90,21 +106,14 @@
 
           .project--block {
             &:before {
-              left: 0;
-              transition-delay: .0s;
+              height: 45%;
+              opacity: .85;
             }
 
-            .project--teaser { opacity: .10; }
             .project--brief {
               opacity: 1;
               transform: translateY(0px);
-              transition-delay: .5s;
-            }
-          }
-
-          &:nth-of-type(even){
-            .project--block {
-              &:before { right: 0; }
+              transition-delay: .25s;
             }
           }
       }
