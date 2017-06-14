@@ -13,7 +13,7 @@
 
 
   	var closeNav = function() {
-      $nav.slideUp();
+      $nav.slideUp(500);
   		$nav.removeClass(options.menuOpenClass);
   		$menuButton.removeClass(options.menuButtonActiveClass);
 
