@@ -24,8 +24,12 @@
       background: @black;
       margin: 20px 0 120px;
       transition: all .5s ease;
+      transform: translate(0px, 40px);
 
-        &.in-viewport { opacity: 1; }
+        &.in-viewport {
+          opacity: 1;
+          transform: translate(40px, 0px);
+        }
 
         .project--block {
           padding: 20px;
@@ -64,7 +68,7 @@
             opacity: .25;
             display: block;
             position: absolute;
-            transition: all .25s ease .25s;
+            transition: transform .5s ease;
           }
 
           .project--brief {
@@ -83,10 +87,10 @@
         }
 
       &.in-viewport {
-        transform: translateX(30px);
+        transform: translate(30px, 0px);
 
         &:nth-of-type(even){
-          transform: translateX(-30px);
+          transform: translate(-30px, 0px);
         }
       }
 
@@ -110,6 +114,8 @@
 
       }
 
+      &:last-of-type { margin-bottom: 20px; }
+
       &:hover {
         text-decoration: none;
 
@@ -117,6 +123,10 @@
             &:before {
               height: 45%;
               opacity: .85;
+            }
+
+            .project--teaser {
+              transform: scale(1.1);
             }
 
             .project--brief {
@@ -130,15 +140,15 @@
 
       @media @tablet-sml, @mobile-lg {
         &.in-viewport {
-          transform: translateX(20px);
-            &:nth-of-type(even){ transform: translateX(-20px); }
+          transform: translate(20px, 0px);
+            &:nth-of-type(even){ transform: translate(-20px, 0px); }
         }
       }
 
       @media @mobile-sml {
         &.in-viewport {
-          transform: translateX(0px);
-            &:nth-of-type(even){ transform: translateX(0px); }
+          transform: translate(0px, 0px);
+            &:nth-of-type(even){ transform: translate(0px, 0px); }
         }
 
         .project--block {
