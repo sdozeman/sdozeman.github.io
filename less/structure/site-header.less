@@ -1,0 +1,54 @@
+.site-header {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  padding: 30px 0 40px;
+  transition: all .25s ease;
+  z-index: (@zindex-base + 100);
+
+    .container {
+      height: 100%;
+      position: relative;
+
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    .site--logo {
+      .fancy-link;
+      display: block;
+      font-size: 30px;
+      transition: all .25s ease;
+    }
+
+    .site--navigation {
+      ul {
+        .plain-list;
+        transform: translateY(5px);
+
+          li {
+            margin-left: 30px;
+            position: relative;
+            display: inline-block;
+
+              a {
+                .fancy-link;
+                display: block;
+                font-size: 18px;
+              }
+          }
+      }
+    }
+
+    &.scrolled {
+      padding: 20px 0 30px;
+      background: rgba(37, 37, 37, .9);
+
+      .site--logo { font-size: 24px; }
+      .site--navigation ul li a { font-size: 14px; }
+    }
+}
