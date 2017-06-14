@@ -17,12 +17,15 @@
     }
 
     .project {
+      opacity: 0;
       color: @white;
-      margin: 20px 0 120px;
       display: block;
       overflow: hidden;
       background: @black;
-      transform: translateX(30px);
+      margin: 20px 0 120px;
+      transition: all .5s ease;
+
+        &.in-viewport { opacity: 1; }
 
         .project--block {
           padding: 20px;
@@ -79,9 +82,15 @@
 
         }
 
-      &:nth-of-type(even){
-        transform: translateX(-30px);
+      &.in-viewport {
+        transform: translateX(30px);
 
+        &:nth-of-type(even){
+          transform: translateX(-30px);
+        }
+      }
+
+      &:nth-of-type(even){
           .project--block {
             &:before {
               transform: skewY(-1deg);
@@ -120,21 +129,25 @@
 
 
       @media @tablet-sml, @mobile-lg {
-        transform: translateX(20px);
-          &:nth-of-type(even){ transform: translateX(-20px); }
+        &.in-viewport {
+          transform: translateX(20px);
+            &:nth-of-type(even){ transform: translateX(-20px); }
+        }
       }
 
       @media @mobile-sml {
-        transform: translateX(0px);
-          &:nth-of-type(even){ transform: translateX(0px); }
+        &.in-viewport {
+          transform: translateX(0px);
+            &:nth-of-type(even){ transform: translateX(0px); }
+        }
 
-          .project--block {
-            .project--brief {
-              width: auto;
-              left: 20px;
-              right: 20px;
-            }
+        .project--block {
+          .project--brief {
+            width: auto;
+            left: 20px;
+            right: 20px;
           }
+        }
       }
     }
 }
