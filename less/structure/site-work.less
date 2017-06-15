@@ -67,6 +67,7 @@
           .project--title {
             top: 40px;
             right: 40px;
+            max-width: 50%;
             font-size: 42px;
             position: absolute;
 
@@ -140,28 +141,27 @@
       }
 
       &:nth-of-type(even){
-          .project--block {
-            &:before {
-              transform: skewY(-1deg);
-              transform-origin: 100% 0;
-            }
-
-            .project--number {
-              left: auto;
-              right: 40px;
-            }
-
-            .project--title {
-              left: 40px;
-              right: auto;
-            }
-
-            .project--brief {
-              left: auto;
-              right: 40px;
-            }
+        .project--block {
+          &:before {
+            transform: skewY(-1deg);
+            transform-origin: 100% 0;
           }
 
+          .project--number {
+            left: auto;
+            right: 40px;
+          }
+
+          .project--title {
+            left: 40px;
+            right: auto;
+          }
+
+          .project--brief {
+            left: auto;
+            right: 40px;
+          }
+        }
       }
 
       &:last-of-type { margin-bottom: 20px; }
@@ -211,6 +211,16 @@
             right: 20px;
           }
         }
+
+        &:nth-of-type(even){
+          .project--block {
+            .project--brief {
+              width: auto;
+              left: 20px;
+              right: 20px;
+            }
+          }
+        }
       }
 
       @media @mobile-all {
@@ -233,12 +243,41 @@
             opacity: 1;
             bottom: 20px;
             font-size: 16px;
+            line-height: 160%;
             transform: translateY(0px)
           }
 
           &:before {
             height: 55%;
             opacity: .85;
+          }
+        }
+      }
+
+      @media @mobile-sml {
+        margin-bottom: 40px;
+
+          .project--block {
+            padding-top: 100%;
+
+              .project--number {
+                top: 12px;
+                left: 20px;
+                font-size: 36px;
+              }
+              .project--title {
+                top: 20px;
+                right: 20px;
+                font-size: 20px;
+              }
+
+              .project--brief { font-size: 14px; }
+          }
+
+        &:nth-of-type(even) {
+          .project--block {
+            .project--number { right: 20px; }
+            .project--title { left: 20px; }
           }
         }
       }
