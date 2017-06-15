@@ -212,5 +212,35 @@
           }
         }
       }
+
+      @media @mobile-all {
+        &:hover {
+          .project--block {
+            &:before {
+              height: 55%;
+              opacity: .85;
+            }
+            .project--brief {
+              opacity: 1;
+              bottom: 20px;
+              transform: translateY(0px)
+            }
+          }
+        }
+        .project--block {
+          .project--title { font-size: 32px; }
+          .project--brief {
+            opacity: 1;
+            bottom: 20px;
+            font-size: 16px;
+            transform: translateY(0px)
+          }
+
+          &:before {
+            height: 55%;
+            opacity: .85;
+          }
+        }
+      }
     }
 }
