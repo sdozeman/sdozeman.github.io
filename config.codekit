@@ -258,7 +258,7 @@
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/less\/structure\/flexboxgrid.less",
 		"outputAbbreviatedPath": "\/less\/css\/flexboxgrid.css",
