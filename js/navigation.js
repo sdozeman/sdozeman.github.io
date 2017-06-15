@@ -43,6 +43,8 @@
   	$(window).resize(function(){
   		if( !$menuButton.is(':visible') ) {
   			$nav.removeAttr( 'style' );
+        $nav.removeClass('menu-open');
+        $menuButton.removeClass('active');
   		}
   	});
   	return this;
