@@ -11,8 +11,6 @@ function isScrolledIntoView(elem) {
   return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
-
-
 // On Ready Here
 jQuery(document).ready(function($){
   $('.site--hero-background').parallaxify({
@@ -22,6 +20,20 @@ jQuery(document).ready(function($){
   });
 
   $('.site--navigation').mobileNavigation();
+
+  (function() {
+  	var mails = document.querySelectorAll('[data-mail-user][data-mail-domain]');
+
+    Array.prototype.forEach.call(mails, function(el) {
+    	var user    = el.dataset.mailUser;
+      var domain  = el.dataset.mailDomain;
+      var pattern =  user + '@' + domain;
+
+      if(el.getAttribute('href')) {
+      	el.setAttribute('href', 'mailto:' + pattern);
+      }
+     });
+  }());
 
   // Sticky Header animation
   $(window).on('scroll touchmove', function(){

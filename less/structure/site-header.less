@@ -103,6 +103,34 @@
                 display: block;
                 font-size: 18px;
               }
+
+              span.icon {
+                width: 25px;
+                height: 25px;
+                position: relative;
+                padding-bottom: 100%;
+                display: inline-block;
+                vertical-align: middle;
+
+                  svg {
+                    top: 0;
+                    left: 0;
+                    fill: @white;
+                    position: absolute;
+                    display: inline-block;
+                  }
+                  &.email { top: 5px; }
+                  &.linkedin {
+                    svg {
+                      top: -2px;
+                      left: 1px;
+                      right: 2px;
+                      fill: @white;
+                      position: absolute;
+                      display: inline-block;
+                    }
+                  }
+              }
           }
       }
     }
@@ -125,8 +153,8 @@
 
          ul {
            opacity: 0;
-           margin: 10px 0;
            text-align: center;
+           margin: 30px 0 10px;
            transition: all .25s ease .0s;
 
              li {
