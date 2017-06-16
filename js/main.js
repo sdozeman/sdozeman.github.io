@@ -1,4 +1,5 @@
 // @codekit-prepend  "navigation.js"
+// @codekit-prepend  "off-canvas.js"
 
 //Functions Up Here
 function isScrolledIntoView(elem) {
@@ -19,7 +20,8 @@ jQuery(document).ready(function($){
     responsive: true
   });
 
-  $('.site--navigation').mobileNavigation();
+  $('nav.site--navigation').mobileNavigation();
+  $('.content.off--canvas').offCanvas();
 
   (function() {
   	var mails = document.querySelectorAll('[data-mail-user][data-mail-domain]');

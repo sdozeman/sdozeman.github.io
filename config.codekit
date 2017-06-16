@@ -130,12 +130,34 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/min\/off-canvas-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/off-canvas-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/off-canvas-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/navigation.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/navigation.js",
 		"outputAbbreviatedPath": "\/js\/min\/navigation-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/off-canvas.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/off-canvas.js",
+		"outputAbbreviatedPath": "\/js\/min\/off-canvas-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -252,6 +274,26 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/less\/structure\/content.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/less\/structure\/content.less",
+		"outputAbbreviatedPath": "\/less\/css\/content.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
 	"\/less\/structure\/flexboxgrid.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -272,7 +314,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/less\/structure\/site-about.less": {
+	"\/less\/structure\/footer.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -280,8 +322,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/less\/structure\/site-about.less",
-		"outputAbbreviatedPath": "\/less\/css\/site-about.css",
+		"inputAbbreviatedPath": "\/less\/structure\/footer.less",
+		"outputAbbreviatedPath": "\/less\/css\/footer.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -292,7 +334,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/less\/structure\/site-content.less": {
+	"\/less\/structure\/header.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -300,8 +342,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/less\/structure\/site-content.less",
-		"outputAbbreviatedPath": "\/less\/css\/site-content.css",
+		"inputAbbreviatedPath": "\/less\/structure\/header.less",
+		"outputAbbreviatedPath": "\/less\/css\/header.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -312,7 +354,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/less\/structure\/site-footer.less": {
+	"\/less\/structure\/off-canvas.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -320,8 +362,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/less\/structure\/site-footer.less",
-		"outputAbbreviatedPath": "\/less\/css\/site-footer.css",
+		"inputAbbreviatedPath": "\/less\/structure\/off-canvas.less",
+		"outputAbbreviatedPath": "\/less\/css\/off-canvas.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -332,7 +374,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/less\/structure\/site-header.less": {
+	"\/less\/structure\/sections\/about.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -340,8 +382,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/less\/structure\/site-header.less",
-		"outputAbbreviatedPath": "\/less\/css\/site-header.css",
+		"inputAbbreviatedPath": "\/less\/structure\/sections\/about.less",
+		"outputAbbreviatedPath": "\/less\/structure\/css\/about.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -352,7 +394,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/less\/structure\/site-hero.less": {
+	"\/less\/structure\/sections\/hero.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -360,8 +402,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/less\/structure\/site-hero.less",
-		"outputAbbreviatedPath": "\/less\/css\/site-hero.css",
+		"inputAbbreviatedPath": "\/less\/structure\/sections\/hero.less",
+		"outputAbbreviatedPath": "\/less\/structure\/css\/hero.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -372,7 +414,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/less\/structure\/site-work.less": {
+	"\/less\/structure\/sections\/work.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -380,8 +422,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/less\/structure\/site-work.less",
-		"outputAbbreviatedPath": "\/less\/css\/site-work.css",
+		"inputAbbreviatedPath": "\/less\/structure\/sections\/work.less",
+		"outputAbbreviatedPath": "\/less\/structure\/css\/work.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -408,6 +450,26 @@
 		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/less\/touch.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/less\/touch.less",
+		"outputAbbreviatedPath": "\/css\/touch.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
 		"strictImports": 0,
 		"strictMath": 0,
 		"strictUnits": 0
