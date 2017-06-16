@@ -4,33 +4,14 @@
 @import "base/fonts.less";
 @import "base/global.less";
 
-@import "structure/flexboxgrid.less";
-@import "structure/site-header.less";
-@import "structure/site-footer.less";
-@import "structure/site-content.less";
-@import "structure/site-hero.less";
-@import "structure/site-about.less";
-@import "structure/site-work.less";
+@import "structure/header.less";
+@import "structure/footer.less";
+@import "structure/content.less";
 
-.container {
-  width: 100%;
-  .center-block;
-  max-width: 1040px;
-  padding: 0px 20px;
-  position: relative;
+@import "structure/off-canvas.less";
 
-    &.slim {
-      padding: 0 10px;
-      max-width: 800px;
-      border-bottom: none;
-      border-top: none;
+@import "structure/sections/hero.less";
+@import "structure/sections/about.less";
+@import "structure/sections/work.less";
 
-        @media @mobile-sml { padding: 0; }
-    }
-}//.container
-
-.site-content {
-  background: @white;
-  position: relative;
-  z-index: @zindex-base;
-}
+@import "touch.less";

@@ -9,7 +9,6 @@
   	<link rel="apple-touch-icon" href="img/icons/favicon-76.png" sizes="76x76">
   	<link rel="apple-touch-icon" href="img/icons/favicon-120.png" sizes="120x120">
   	<link rel="apple-touch-icon" href="img/icons/favicon-152.png" sizes="152x152">
-
   	<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
   </head>
 
@@ -77,6 +76,8 @@
           <div class="container">
             <h2 class="section--headline reversed">About</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla accumsan interdum. Mauris facilisis malesuada urna non ultricies. Integer lobortis, ipsum quis placerat semper, orci nisl euismod odio, eget ullamcorper erat odio at justo. Aliquam tempor massa urna, vitae tempus felis volutpat sit amet. Praesent nunc eros, venenatis id dictum vitae, cursus eget libero. Quisque porttitor arcu velit, sed fringilla augue fermentum eleifend. Aliquam eget interdum ipsum. Phasellus mollis id est vel posuere. Aliquam tempus varius lacinia. Nunc faucibus, metus interdum euismod interdum, dolor ipsum tincidunt tortor, a finibus sapien tortor at ipsum. In sed dui sit amet velit bibendum rutrum. Aliquam placerat feugiat venenatis. Sed vel sapien pretium, mollis dolor quis, sollicitudin massa. Pellentesque augue dui, tempor pellentesque massa dignissim, varius rhoncus nibh.</p>
+
+            <button class="off--canvas-trigger">Clicky</button>
           </div>
         </article>
 
@@ -134,6 +135,37 @@
           &copy 2017 - Sean Dozeman
         </div>
       </footer>
+
+      <div class="content off--canvas">
+        <div class="off--canvas-content">
+          <a href="#" class="off--canvas-closer"><span>Close</span></a>
+            <div class="container">
+
+              <div class="off--canvas-loader">
+                <div class="loader">
+                  <svg version="1.1" id="Layer_1" viewBox="0 0 48 60" style="enable-background:new 0 0 50 50;" preserveAspectRatio="xMinYMin meet" class="svg-content">
+                    <rect x="4" y="0" width="8" height="56">
+                      <animate attributeName="opacity"
+                        values="1; .2; 1"
+                        begin="0s" dur="0.6s" repeatCount="indefinite" />
+                    </rect>
+                    <rect x="20" y="0" width="8" height="56">
+                      <animate attributeName="opacity"
+                        values="1; .2; 1"
+                        begin="0.2s" dur="0.6s" repeatCount="indefinite" />
+                    </rect>
+                    <rect x="36" y="0" width="8" height="56">
+                      <animate attributeName="opacity"
+                        values="1; .2; 1"
+                        begin="0.4s" dur="0.6s" repeatCount="indefinite" />
+                    </rect>
+                  </svg>
+                </div>
+              </div>
+
+            </div><!-- container -->
+        </div>
+      </div>
     </section>
     <script src="js/jquery.min.js"></script>
     <script src="js/parallaxify.js"></script>

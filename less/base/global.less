@@ -1,11 +1,44 @@
+
 * { .box-sizing(border-box); }
 
 body{
   color: @black;
-	background: @white;
+	background: @black;
 	font: normal @font-size-base/@line-height @font-family-base;
+
+    &.canvas-open {
+      height: 100%;
+      overflow: hidden;
+    }
 }
 
 img{ max-width: 100%; }
 p { margin: 0 0 @padding-base 0; }
 pre, code, blockquote { padding: @padding-large; }
+
+.container {
+  width: 100%;
+  .center-block;
+  max-width: 1040px;
+  padding: 0px 20px;
+  position: relative;
+
+    &.slim {
+      padding: 0 10px;
+      max-width: 800px;
+      border-bottom: none;
+      border-top: none;
+
+        @media @mobile-sml { padding: 0; }
+    }
+}//.container
+
+.page {
+  position: relative;
+}
+
+.site-content {
+  background: @white;
+  position: relative;
+  z-index: @zindex-base;
+}
