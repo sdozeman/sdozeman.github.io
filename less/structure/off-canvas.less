@@ -5,10 +5,9 @@
   height: 100%;
   position: fixed;
   overflow: scroll;
-  padding: 120px 0;
   background: @black;
   transition: all .5s ease;
-  z-index: (@zindex-base + 50);
+  z-index: (@zindex-base + 250);
 
     .off--canvas-content,
     .off--canvas-content .container {
@@ -16,7 +15,6 @@
     }
 
     .off--canvas-content {
-      padding: 100px 0;
       position: relative;
 
         .content {
@@ -35,7 +33,6 @@
       font-weight: 700;
       position: absolute;
       text-align: center;
-      color: @gray-navigation;
       text-transform: lowercase;
       z-index: (@zindex-base + 25);
       font-family: @font-family-headings;
@@ -46,15 +43,18 @@
           height: 4px;
           display: block;
           position: absolute;
-          background: @gray-navigation;
           top: calc(~"50% - 12px");
           left: calc(~"50% - 14px");
+          transition: all .25s ease;
+          background: @white;
         }
 
         &:before { transform: rotate(45deg); }
         &:after { transform: rotate(-45deg); }
+        &:hover { text-decoration: none; }
 
         span {
+          color: @white;
           display: block;
           padding-top: 50px;
         }
