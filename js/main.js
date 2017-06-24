@@ -61,6 +61,8 @@ jQuery(document).ready(function($){
           $('#occ').html(data);
           window.console.log(name + ' was loaded successfully.');
           $('.off--canvas-trigger').click();
+          $('.off--canvas').addClass('content-loaded');
+
         },
         error: function() {
           window.console.log('There was an error loading ' + name + '.' );
