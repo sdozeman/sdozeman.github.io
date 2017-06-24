@@ -64,13 +64,15 @@
 
 .off--canvas-loader {
   opacity: 1;
-  width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+
+  position: absolute;
   transition: all .35s ease;
+  width: calc(~"100% - 40px");
 }
 
 
