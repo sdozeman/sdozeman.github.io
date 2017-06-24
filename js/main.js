@@ -61,7 +61,10 @@ jQuery(document).ready(function($){
           $('#occ').html(data);
           window.console.log(name + ' was loaded successfully.');
           $('.off--canvas-trigger').click();
-          $('.off--canvas').addClass('content-loaded');
+
+          setTimeout(function(){
+            $('.off--canvas').addClass('content-loaded');
+          }, 2500);
 
         },
         error: function() {
