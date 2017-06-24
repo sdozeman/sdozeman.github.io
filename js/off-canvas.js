@@ -15,7 +15,8 @@
 
 
   	var closeCanvas = function() {
-      $('#occ').innerHTML = "";
+      $canvas.find('.project').remove();
+      $canvas.removeClass('content-loaded');
   		$canvas.removeClass(options.canvasOpenClass);
   		$canvasButton.removeClass(options.canvasButtonActiveClass);
 
