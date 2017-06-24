@@ -12,6 +12,20 @@ function isScrolledIntoView(elem) {
   return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
+function hideEmails() {
+  var mails = document.querySelectorAll('[data-mail-user][data-mail-domain]');
+
+  Array.prototype.forEach.call(mails, function(el) {
+    var user    = el.dataset.mailUser;
+    var domain  = el.dataset.mailDomain;
+    var pattern =  user + '@' + domain;
+
+    if(el.getAttribute('href')) {
+      el.setAttribute('href', 'mailto:' + pattern);
+    }
+  });
+}
+
 // On Ready Here
 jQuery(document).ready(function($){
   $('.site--hero-background').parallaxify({
@@ -20,22 +34,10 @@ jQuery(document).ready(function($){
     responsive: true
   });
 
+  hideEmails();
   $('nav.site--navigation').mobileNavigation();
   $('.content.off--canvas').offCanvas();
 
-  (function() {
-  	var mails = document.querySelectorAll('[data-mail-user][data-mail-domain]');
-
-    Array.prototype.forEach.call(mails, function(el) {
-    	var user    = el.dataset.mailUser;
-      var domain  = el.dataset.mailDomain;
-      var pattern =  user + '@' + domain;
-
-      if(el.getAttribute('href')) {
-      	el.setAttribute('href', 'mailto:' + pattern);
-      }
-     });
-  }());
 
   // Sticky Header animation
   $(window).on('scroll touchmove', function(){
@@ -46,6 +48,23 @@ jQuery(document).ready(function($){
       }
     });
   }).scroll();
+
+
+  $('a[data-project]').each(function(){
+    $(this).on('click', function(e){
+      e.preventDefault();
+
+      $.ajax({
+        url: this.href,
+        success: function(data) {
+          $('#occ').html(data);
+          window.console.log('Load was performed.');
+          $('.off--canvas-trigger').click();
+        }
+      });
+    });
+  });
+
 
   $(window).trigger('resize, scroll');
 });

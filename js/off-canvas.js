@@ -35,7 +35,6 @@
     };
 
   	var canvasBtnFn = function() {
-
   		$canvasButton.bind('touchstart, click', function(event) {
   			event.stopPropagation();
   			event.preventDefault();

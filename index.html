@@ -79,7 +79,8 @@
             <h2 class="section--headline reversed">About</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla accumsan interdum. Mauris facilisis malesuada urna non ultricies. Integer lobortis, ipsum quis placerat semper, orci nisl euismod odio, eget ullamcorper erat odio at justo. Aliquam tempor massa urna, vitae tempus felis volutpat sit amet. Praesent nunc eros, venenatis id dictum vitae, cursus eget libero. Quisque porttitor arcu velit, sed fringilla augue fermentum eleifend. Aliquam eget interdum ipsum. Phasellus mollis id est vel posuere. Aliquam tempus varius lacinia. Nunc faucibus, metus interdum euismod interdum, dolor ipsum tincidunt tortor, a finibus sapien tortor at ipsum. In sed dui sit amet velit bibendum rutrum. Aliquam placerat feugiat venenatis. Sed vel sapien pretium, mollis dolor quis, sollicitudin massa. Pellentesque augue dui, tempor pellentesque massa dignissim, varius rhoncus nibh.</p>
 
-            <button class="off--canvas-trigger">Clicky</button>
+            <button class="off--canvas-trigger">Fk.</button>
+
           </div>
         </article>
 
@@ -88,7 +89,7 @@
             <h2 class="section--headline">Projects</h2>
             <p>Small paragraph about some of the projects I've worked on and how I contributed?</p><br><br>
               <div class="container slim">
-                <a href="#" class="project project--1">
+                <a href="projects/project-1.html" class="project" data-project="project-1">
                   <div class="project--block">
                     <span class="project--teaser" style="background: url(img/project-images/project-placeholder-1.jpg) center center no-repeat; background-size: cover;"></span>
                     <span class="project--number">01</span>
@@ -101,7 +102,7 @@
                   </div>
                 </a>
 
-                <a href="#" class="project project--2">
+                <a href="projects/project-2.html" class="project" data-project="project-2">
                   <div class="project--block">
                     <span class="project--teaser" style="background: url(img/project-images/project-placeholder-2.jpg) center center no-repeat; background-size: cover;"></span>
                     <span class="project--number">02</span>
@@ -114,7 +115,7 @@
                   </div>
                 </a>
 
-                <a href="#" class="project project--3">
+                <a href="projects/project-3.html" class="project project-3" data-project="project-3">
                   <div class="project--block">
                     <span class="project--teaser" style="background: url(img/project-images/project-placeholder-3.jpg) center center no-repeat; background-size: cover;"></span>
                     <span class="project--number">03</span>
@@ -137,34 +138,37 @@
           &copy 2017 - Sean Dozeman
         </div>
       </footer>
-
       <div class="content off--canvas">
         <div class="off--canvas-content">
           <a href="#" class="off--canvas-closer"><span>Close</span></a>
             <div class="container">
 
-              <div class="off--canvas-loader">
+              <div class="off--canvas-loader" id="ocl">
                 <div class="loader">
-                  <svg version="1.1" id="Layer_1" viewBox="0 0 48 60" style="enable-background:new 0 0 50 50;" preserveAspectRatio="xMinYMin meet" class="svg-content">
-                    <rect x="4" y="0" width="8" height="56">
-                      <animate attributeName="opacity"
-                        values="1; .2; 1"
-                        begin="0s" dur="0.6s" repeatCount="indefinite" />
+                  <svg version="1.1" id="Layer_1" viewBox="0 0 55 60" style="enable-background:new 0 0 50 50;" preserveAspectRatio="xMinYMin meet" class="svg-content">
+                    <rect x="0" y="2" width="8" height="56" transform="skewX(15)">
+                      <animate attributeName="opacity" attributeType="XML" values="1; .2; 1" begin="0s" dur="0.6s" repeatCount="indefinite" />
+                      <animate attributeName="height" attributeType="XML" values="28; 56; 28" begin="0s" dur="0.6s" repeatCount="indefinite" />
+                      <animate attributeName="y" attributeType="XML" values="2; 12; 2" begin="0s" dur="0.6s" repeatCount="indefinite" />
+
                     </rect>
-                    <rect x="20" y="0" width="8" height="56">
-                      <animate attributeName="opacity"
-                        values="1; .2; 1"
-                        begin="0.2s" dur="0.6s" repeatCount="indefinite" />
+                    <rect x="16" y="2" width="8" height="56" transform="skewX(15)">
+                      <animate attributeName="opacity" attributeType="XML" values="1; .2; 1" begin="0.2s" dur="0.6s" repeatCount="indefinite" />
+                      <animate attributeName="height" attributeType="XML" values="28; 56; 28" begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+                      <animate attributeName="y" attributeType="XML" values="2; 12; 2" begin="0.15s" dur="0.6s" repeatCount="indefinite" />
                     </rect>
-                    <rect x="36" y="0" width="8" height="56">
-                      <animate attributeName="opacity"
-                        values="1; .2; 1"
-                        begin="0.4s" dur="0.6s" repeatCount="indefinite" />
+                    <rect x="32" y="2" width="8" height="56" transform="skewX(15)">
+                      <animate attributeName="opacity" attributeType="XML" values="1; .2; 1" begin="0.4s" dur="0.6s" repeatCount="indefinite" />
+                      <animate attributeName="height" attributeType="XML" values="28; 56; 28" begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+                      <animate attributeName="y" attributeType="XML" values="2; 12; 2" begin="0.3s" dur="0.6s" repeatCount="indefinite" />
                     </rect>
                   </svg>
                 </div>
               </div>
 
+              <div class="content" id="occ">
+
+              </div>
             </div><!-- container -->
         </div>
       </div>
