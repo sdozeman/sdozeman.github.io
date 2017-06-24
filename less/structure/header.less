@@ -61,18 +61,17 @@
               height: 4px;
               display: block;
               position: absolute;
-              background-color: @color2;
+              background-color: @white;
               transition: top 0.25s ease .25s, transform 0.25s ease 0s, background-color .25s ease, opacity .25s ease .25s;
 
                 &:nth-of-type(2),
                 &:nth-of-type(3) {
                   top: 10px;
-                  background-color: @color3;
                 }
 
                 &:nth-of-type(4) {
                   top: 20px;
-                  background-color: @color4;
+                  background-color: @color2;
                 }
             }
 
@@ -165,7 +164,7 @@
       background: rgba(37, 37, 37, .9);
         &:after { opacity: 1; }
 
-        .site--logo { font-size: 20px; }
+        .site--logo { font-size: 20px; box-shadow: inset 0px -4px 0px 0px @color2; }
         .site--navigation-btn { display: block; }
         .site--navigation {
           display: none;
