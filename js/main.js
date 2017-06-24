@@ -61,6 +61,14 @@ jQuery(document).ready(function($){
           $('#occ').html(data);
           window.console.log(name + ' was loaded successfully.');
           $('.off--canvas-trigger').click();
+
+          setTimeout(function(){
+            $('.off--canvas').addClass('content-loaded');
+          }, 1000);
+
+        },
+        error: function() {
+          window.console.log('There was an error loading ' + name + '.' );
         }
       });
     });

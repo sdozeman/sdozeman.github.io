@@ -17,9 +17,11 @@
 
     .off--canvas-content {
       position: relative;
+      padding-top: 120px;
 
         .content {
           opacity: 0;
+          padding: 20px;
           background: @white;
           transition: all .35s ease;
         }
@@ -63,14 +65,17 @@
 }
 
 .off--canvas-loader {
+  top: 0;
   opacity: 1;
-  width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+
+  position: absolute;
   transition: all .35s ease;
+  width: calc(~"100% - 40px");
 }
 
 

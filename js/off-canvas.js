@@ -15,11 +15,16 @@
 
 
   	var closeCanvas = function() {
+      $canvas.removeClass('content-loaded');
   		$canvas.removeClass(options.canvasOpenClass);
   		$canvasButton.removeClass(options.canvasButtonActiveClass);
 
       $('body').removeClass(options.canvasOpenClass);
   		canvasOpen = false;
+
+      setTimeout(function(){
+        $canvas.find('.project').remove();
+      }, 1000);
   	};
 
     var closeBtnFn = function() {
