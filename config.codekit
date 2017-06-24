@@ -474,29 +474,29 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/project-1.html": {
+	"\/projects\/project-1.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/project-1.html",
+		"inputAbbreviatedPath": "\/projects\/project-1.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/project-2.html": {
+	"\/projects\/project-2.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/project-2.html",
+		"inputAbbreviatedPath": "\/projects\/project-2.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/project-3.html": {
+	"\/projects\/project-3.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/project-3.html",
+		"inputAbbreviatedPath": "\/projects\/project-3.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
