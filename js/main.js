@@ -64,7 +64,7 @@ jQuery(document).ready(function($){
 
           setTimeout(function(){
             $('.off--canvas').addClass('content-loaded');
-          }, 2500);
+          }, 1000);
 
         },
         error: function() {

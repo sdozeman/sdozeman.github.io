@@ -24,7 +24,7 @@
 
       setTimeout(function(){
         $canvas.find('.project').remove();
-      }, 2500);
+      }, 1000);
   	};
 
     var closeBtnFn = function() {
