@@ -52,13 +52,14 @@ jQuery(document).ready(function($){
 
   $('a[data-project]').each(function(){
     $(this).on('click', function(e){
+      var name = $(this).attr('data-project');
       e.preventDefault();
 
       $.ajax({
         url: this.href,
         success: function(data) {
           $('#occ').html(data);
-          window.console.log('Load was performed.');
+          window.console.log(name + ' was loaded successfully.');
           $('.off--canvas-trigger').click();
         }
       });
