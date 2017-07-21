@@ -45,7 +45,11 @@
   			$nav.removeAttr( 'style' );
         $nav.removeClass('menu-open');
         $menuButton.removeClass('active');
-  		}
+  		} else {
+        $nav.find('a').on('click', function(){
+          closeNav();
+        });
+      }
   	});
   	return this;
   };

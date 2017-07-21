@@ -28,9 +28,8 @@
   font-weight: 700;
   overflow: hidden;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   text-transform: lowercase;
-  // box-shadow: inset 0px -4px 0px 0px @color2;
   font-family: @font-family-headings;
 
     &:before, &:after {
@@ -41,7 +40,7 @@
       height: 4px;
       display: block;
       position: absolute;
-      transition: right .5s ease;
+      transition: right .5s ease 0s;
     }
 
     &:before {
@@ -52,13 +51,19 @@
     &:after {
       z-index: 200;
       background: @color4;
-      transition: right .35s ease .35s;
     }
 
     &:hover {
-      &:before,
-      &:after { right: 0; }
       text-decoration: none;
+
+      &:before {
+        right: 0;
+        transition: right .5s ease 0s;
+      }
+      &:after {
+        right: 0;
+        transition: right .35s ease .35s;
+      }
     }
 }
 
