@@ -45,8 +45,9 @@
   			$nav.removeAttr( 'style' );
         $nav.removeClass('menu-open');
         $menuButton.removeClass('active');
+        $nav.find('li').unbind('click');
   		} else {
-        $nav.find('a').on('click', function(){
+        $nav.find('li').bind('click', function(){
           closeNav();
         });
       }

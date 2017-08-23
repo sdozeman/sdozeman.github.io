@@ -1,7 +1,16 @@
 .site--about {
   padding: 60px 0;
   position: relative;
+  // background: url(../img/about-bg.jpg) center center no-repeat;
+  background-size: cover;
   z-index: 100;
+
+
+    p { width: 65%; }
+
+      @media @mobile-all {
+        p { width: 100%; }
+      }
 
   &:before,
   &:after {

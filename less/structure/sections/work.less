@@ -119,9 +119,10 @@
           .project--brief {
             // width: 66%;
             left: 40px;
+            right: 40px;
             opacity: 0;
             bottom: 40px;
-            font-size: 18px;
+            // font-size: 18px;
             position: absolute;
             transform: translateY(20px);
             z-index: (@zindex-base * 2);
@@ -214,7 +215,6 @@
             }
             .project--brief {
               opacity: 1;
-              bottom: 20px;
               transform: translateY(0px)
             }
           }
@@ -226,7 +226,14 @@
             bottom: 20px;
             font-size: 16px;
             line-height: 160%;
-            transform: translateY(0px)
+            transform: translateY(0px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(~"55% - 40px");
+
+              p { margin: 0; }
           }
 
           &:before {
@@ -242,7 +249,12 @@
           .project--block {
             padding-top: 100%;
 
-              &:before { transform: skewY(2.25deg); }
+              &:before {
+                height: 60%;
+                transform: skewY(2.25deg);
+              }
+
+              &:hover:before { height: 60%; }
 
               .project--number {
                 top: 12px;
