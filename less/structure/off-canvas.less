@@ -64,12 +64,11 @@
         }
 
         @media @mobile-all {
-          top: 43px;
           height: 50px;
           background: @black;
           box-shadow: 0 0 5px 0 #252525;
 
-            &:before, &:after { margin-left: 11px; }
+            &:before, &:after { top: 43px; margin-left: 11px; }
 
             span { display: none; }
         }
@@ -79,7 +78,7 @@
 .off--canvas-loader {
   top: 0;
   opacity: 1;
-  height: 100%;
+  height: calc(~"100% - 240px");
   display: flex;
   flex-wrap: nowrap;
   align-items: center;

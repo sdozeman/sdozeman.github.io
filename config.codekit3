@@ -9,16 +9,6 @@
 	],
 "creatorBuild": "25900",
 "files": {
-	"\/css\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"\/img\/about-bg.jpg": {
 		"ft": 16384,
 		"iS": 152918,
@@ -466,23 +456,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/less\/css\/header.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/less\/structure\/off-canvas.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/less\/css\/off-canvas.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
