@@ -20,24 +20,22 @@
 
         .content {
           opacity: 0;
-          top: 120px;
-          padding: 20px;
           overflow: auto;
+          margin: 120px 0;
           position: relative;
           background: @white;
           transition: all .35s ease;
-          max-height: calc(~"100% - 120px");
         }
     }
 
     .off--canvas-closer {
       top: 20px;
-      left: 20px;
       width: 50px;
       height: 80px;
       display: block;
+      position: fixed;
       font-weight: 700;
-      position: absolute;
+      margin-left: 20px;
       text-align: center;
       text-transform: lowercase;
       z-index: (@zindex-base + 25);
@@ -62,7 +60,6 @@
         span {
           color: @white;
           display: block;
-          position: fixed;
           padding-top: 50px;
         }
     }
