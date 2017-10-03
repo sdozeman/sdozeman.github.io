@@ -1,0 +1,20 @@
+.project {
+  opacity: .65;
+  color: @white;
+  display: block;
+  overflow: hidden;
+  background: @black;
+  transition: all .5s ease;
+  transform: translate(20px, 20px);
+
+    &.in-viewport {
+      opacity: 1;
+      transform: translate(0px, 0px);
+    }
+
+    .project--block {
+      .project--title {
+        span { display: block; }
+      }
+    }
+}

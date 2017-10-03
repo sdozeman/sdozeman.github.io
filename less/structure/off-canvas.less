@@ -17,13 +17,16 @@
 
     .off--canvas-content {
       position: relative;
-      padding-top: 120px;
 
         .content {
           opacity: 0;
+          top: 120px;
           padding: 20px;
+          overflow: auto;
+          position: relative;
           background: @white;
           transition: all .35s ease;
+          max-height: calc(~"100% - 120px");
         }
     }
 
@@ -41,13 +44,13 @@
       font-family: @font-family-headings;
 
         &:before, &:after {
+          top: 50px;
           width: 28px;
           content: "";
           height: 4px;
           display: block;
-          position: absolute;
-          top: calc(~"50% - 12px");
-          left: calc(~"50% - 14px");
+          position: fixed;
+          margin-left: 10px;
           transition: all .25s ease;
           background: @white;
         }
