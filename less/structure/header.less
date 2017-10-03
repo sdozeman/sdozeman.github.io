@@ -150,18 +150,13 @@
     }
 
     &.scrolled {
-      padding: 15px 0;
+      padding: 15px 0 10px;
       background: rgba(37, 37, 37, .9);
 
       &:after { opacity: 1; }
 
       .site--logo { font-size: 20px; }
       .site--navigation ul li a { font-size: 14px; }
-
-      @media @desktop, @desktop-sml, @tablet-all {
-        .site--logo { transform: translateY(1px); }
-        .site--navigation ul { transform: translateY(4px); }
-      }
     }
 
     @media @mobile-all {
