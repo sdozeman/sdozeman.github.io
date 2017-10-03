@@ -85,7 +85,7 @@
 		"oAP": "\/img\/project-images\/project-1\/top-lg.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/project-images\/project-front-1.jpg": {
@@ -490,6 +490,23 @@
 		"sM": 0,
 		"sU": 0
 		},
+	"\/less\/structure\/project.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/less\/css\/project.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
 	"\/less\/structure\/sections\/about.less": {
 		"aP": 0,
 		"bl": 0,
@@ -517,23 +534,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/less\/structure\/css\/hero.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/less\/structure\/sections\/projects-new.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/less\/structure\/css\/projects-new.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
