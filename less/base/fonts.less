@@ -36,13 +36,37 @@ a {
 p { margin: 0 0 @padding-base 0; }
 
 .section--headline {
+  color: rgba(37,37,37,.9);
+  font-size: 50px;
   position: relative;
-  margin-bottom: 30px;
-  padding-bottom: 10px;
   display: inline-block;
-  box-shadow: inset 0px -5px 0px 0px @color2;
 
-    &.reversed {
-      box-shadow: inset 0px -5px 0px 0px @color4;
+    &:before,
+    &:after {
+      top: 0;
+      left: 0;
+      opacity: .5;
+      width: 65px;
+      z-index: 20;
+      color: @color2;
+      overflow: hidden;
+      position: absolute;
+      content: attr(title);
     }
+
+    &:after {
+      width: 132px;
+      z-index: 10;
+      color: @color4;
+    }
+
+
+  // margin-bottom: 30px;
+  // padding-bottom: 10px;
+  // display: inline-block;
+  // box-shadow: inset 0px -5px 0px 0px @color2;
+  //
+  //   &.reversed {
+  //     box-shadow: inset 0px -5px 0px 0px @color4;
+  //   }
 }
