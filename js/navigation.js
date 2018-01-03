@@ -7,9 +7,9 @@
   		menuButtonActiveClass: 'active',
   	}, options);
 
-  	var menuOpen = false,
-  		$nav = $(options.navSelector),
-  		$menuButton = $(options.menuButtonSelector);
+  	var menuOpen = false;
+  	var $nav = $(options.navSelector);
+  	var $menuButton = $(options.menuButtonSelector);
 
 
   	var closeNav = function() {

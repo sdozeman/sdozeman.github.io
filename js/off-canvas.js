@@ -8,10 +8,10 @@
   		canvasButtonActiveClass: 'active',
   	}, options);
 
-  	var canvasOpen = false,
-  		$canvas = $(options.canvasSelector),
-  		$canvasButton = $(options.canvasButtonSelector),
-      $canvasCloseButton = $(options.canvasCloseButtonSelector);
+  	var canvasOpen = false;
+  	var $canvas = $(options.canvasSelector);
+  	var $canvasButton = $(options.canvasButtonSelector);
+    var $canvasCloseButton = $(options.canvasCloseButtonSelector);
 
 
   	var closeCanvas = function() {
