@@ -31,11 +31,55 @@
     }
 
     .site--logo {
-      .fancy-link;
-      display: block;
+      // .fancy-link;
+      // display: block;
       font-size: 30px;
+      position: relative;
+      display: inline-block;
       transition: all .25s ease;
       transform: translateY(-4px);
+
+      color: @white;
+      font-weight: 700;
+      overflow: hidden;
+      position: relative;
+      white-space: nowrap;
+      text-transform: lowercase;
+      font-family: @font-family-headings;
+
+      &:hover { text-decoration: none; }
+
+      //
+      //   &:before,
+      //   &:after {
+      //     top: 0;
+      //     left: 0;
+      //     width: 0%;
+      //     opacity: .9;
+      //     z-index: 10;
+      //     color: @color2;
+      //     overflow: hidden;
+      //     position: absolute;
+      //     content: attr(title);
+      //     transition: width .5s ease 0s;
+      //   }
+      //
+      //   &:after {
+      //     z-index: 20;
+      //     color: @color4;
+      //   }
+      //
+      //   &:hover {
+      //     text-decoration: none;
+      //
+      //       &:before { width: 100%;
+      //         transition: width .5s ease 0s;
+      //       }
+      //       &:after {
+      //         width: 100%;
+      //         transition: width .35s ease .35s;
+      //       }
+      //   }
     }
 
     .site--navigation-btn {
@@ -152,6 +196,7 @@
     &.scrolled {
       padding: 15px 0 10px;
       background: rgba(37, 37, 37, .9);
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
       &:after { opacity: 1; }
 

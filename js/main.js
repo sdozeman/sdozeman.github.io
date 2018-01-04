@@ -36,7 +36,7 @@ jQuery(document).ready(function($){
 
   hideEmails();
   $('nav.site--navigation').mobileNavigation();
-  $('.content.off--canvas').offCanvas();
+  $('div.off--canvas').offCanvas();
 
 
   // Sticky Header animation

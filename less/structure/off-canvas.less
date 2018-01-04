@@ -1,4 +1,13 @@
-.off--canvas-trigger { position: relative; }
+.off--canvas-trigger {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  border: none;
+  font-size: 0;
+  position: relative;
+
+    &:hover { cursor: pointer; }
+}
 .off--canvas {
   top: 0;
   left: 100%;
@@ -38,7 +47,7 @@
       margin-left: 20px;
       text-align: center;
       text-transform: lowercase;
-      z-index: (@zindex-base + 25);
+      z-index: (@zindex-base + 525);
       font-family: @font-family-headings;
 
         &:before, &:after {
@@ -63,10 +72,9 @@
           padding-top: 50px;
         }
 
-        @media @mobile-all {
+        @media @tablet-all, @mobile-all {
           height: 50px;
           background: @black;
-          box-shadow: 0 0 5px 0 #252525;
 
             &:before, &:after { top: 43px; margin-left: 11px; }
 

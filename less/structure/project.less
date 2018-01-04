@@ -1,8 +1,30 @@
-.project {
-  img { display: block; }
+#occ {
+  .project {
+    padding-top: 20px;
 
-  .project--main-image {}
-  .project--headline {
-    padding: 20px;
+      img { display: block; }
+
+      ul {
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      pre {
+        margin: 20px 0;
+        background: #eee;
+        padding: 20px 40px;
+      }
+
+      .project--main-image {}
+      .project--content {
+        padding: 20px 60px;
+
+          img { margin-bottom: 20px; }
+
+          @media @tablet-sml, @mobile-all {
+            padding: 20px;
+            font-size: 16px;
+          }
+      }
   }
 }
