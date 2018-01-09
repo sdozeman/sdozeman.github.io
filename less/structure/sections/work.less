@@ -118,36 +118,67 @@
               }
           }
         }
+        @media @tablet-all, @desktop-sml, @desktop {
+          &:hover {
+            text-decoration: none;
 
-        &:hover {
-          text-decoration: none;
+            .project--view {
+              opacity: 1;
+              transition: opacity .35s ease 1.25s;
+            }
 
+            .project--block {
+              &:before {
+                right: 0;
+                transition: right .5s ease 0s;
+              }
+              &:after {
+                right: 0;
+                transition: right .35s ease .35s;
+              }
+
+              .project--brief {
+                span {
+                  opacity: 1;
+                  transform: translateX(0px);
+                  transition: all .35s ease .35s;
+
+                    &:nth-of-type(2) { transition: all .35s ease .5s; }
+                    &:nth-of-type(3) { transition: all .35s ease .6s; }
+                    &:nth-of-type(4) { transition: all .35s ease .7s; }
+                    &:nth-of-type(5) { transition: all .35s ease .8s; }
+                    &:nth-of-type(6) { transition: all .35s ease .9s; }
+                }
+              }
+            }
+          }
+        }
+
+        @media @mobile-all {
           .project--view {
-            opacity: 1;
-            transition: opacity .35s ease 1.25s;
+            right: 0;
+            bottom: 0;
+            opacity: .85;
+            background: transparent;
           }
 
           .project--block {
-            &:before {
-              right: 0;
-              transition: right .5s ease 0s;
-            }
+            &:before,
             &:after {
-              right: 0;
-              transition: right .35s ease .35s;
+              right: 75%;
+              opacity: .75;
+              transform: rotate(-10deg);
+            }
+
+            &:after {
+              right: 25%;
+              opacity: .5;
             }
 
             .project--brief {
               span {
                 opacity: 1;
-                transform: translateX(0px);
-                transition: all .35s ease .35s;
-
-                  &:nth-of-type(2) { transition: all .35s ease .5s; }
-                  &:nth-of-type(3) { transition: all .35s ease .6s; }
-                  &:nth-of-type(4) { transition: all .35s ease .7s; }
-                  &:nth-of-type(5) { transition: all .35s ease .8s; }
-                  &:nth-of-type(6) { transition: all .35s ease .9s; }
+                transform: translateX(0);
               }
             }
           }
