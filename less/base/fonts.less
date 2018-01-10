@@ -61,7 +61,12 @@ p { margin: 0 0 @padding-base 0; }
     }
 
 
-    @media @mobile-all {font-size: @font-size-h3; } 
+    @media @mobile-all {
+      font-size: @font-size-h3;
+
+      &:before { width: 30px; }
+      &:after { width: 60px; }
+    }
 
   // margin-bottom: 30px;
   // padding-bottom: 10px;
