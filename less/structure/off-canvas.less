@@ -38,14 +38,15 @@
     }
 
     .off--canvas-closer {
+      left: 0;
       top: 20px;
       width: 50px;
       height: 80px;
       display: block;
-      position: fixed;
       font-weight: 700;
       margin-left: 20px;
       text-align: center;
+      position: absolute;
       text-transform: lowercase;
       z-index: (@zindex-base + 525);
       font-family: @font-family-headings;
@@ -62,6 +63,7 @@
           background: @white;
         }
 
+
         &:before { transform: rotate(45deg); }
         &:after { transform: rotate(-45deg); }
         &:hover { text-decoration: none; }
@@ -69,6 +71,7 @@
         span {
           color: @white;
           display: block;
+          position: fixed;
           padding-top: 50px;
         }
 
