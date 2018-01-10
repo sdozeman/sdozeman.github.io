@@ -1,9 +1,9 @@
 .off--canvas-trigger {
-  width: 0;
-  height: 0;
-  opacity: 0;
-  border: none;
-  font-size: 0;
+  // width: 0;
+  // height: 0;
+  // opacity: 0;
+  // border: none;
+  // font-size: 0;
   position: relative;
 
     &:hover { cursor: pointer; }
@@ -18,11 +18,6 @@
   background: @black;
   transition: all .5s ease;
   z-index: (@zindex-base + 250);
-
-    .off--canvas-content,
-    .off--canvas-content .container {
-      height: 100%;
-    }
 
     .off--canvas-content {
       position: relative;
@@ -53,37 +48,45 @@
       z-index: (@zindex-base + 525);
       font-family: @font-family-headings;
 
-        &:before, &:after {
-          top: 50px;
-          width: 28px;
-          content: "";
-          height: 4px;
+        > span {
           display: block;
-          position: fixed;
-          margin-left: 10px;
-          transition: all .25s ease;
-          background: @white;
+
+            &:before,
+            &:after {
+              top: 50px;
+              width: 28px;
+              content: "";
+              height: 4px;
+              display: block;
+              position: fixed;
+              margin-left: 10px;
+              transition: all .25s ease;
+              background: @white;
+            }
+
+            &:before { transform: rotate(45deg); }
+            &:after { transform: rotate(-45deg); }
+
+            span {
+              color: @white;
+              display: block;
+              position: fixed;
+              padding-top: 50px;
+            }
         }
-
-
-        &:before { transform: rotate(45deg); }
-        &:after { transform: rotate(-45deg); }
+        
         &:hover { text-decoration: none; }
 
-        span {
-          color: @white;
-          display: block;
-          position: fixed;
-          padding-top: 50px;
-        }
-
         @media @tablet-all, @mobile-all {
-          height: 50px;
-          background: @black;
+          > span {
+            height: 50px;
+            background: @black;
 
-            &:before, &:after { top: 43px; margin-left: 11px; }
+              &:before,
+              &:after { top: 43px; margin-left: 11px; }
 
             span { display: none; }
+          }
         }
     }
 }
