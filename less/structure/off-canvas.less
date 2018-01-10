@@ -94,9 +94,8 @@
 }
 
 .off--canvas-loader {
-  top: 0;
+  height: 0;
   opacity: 1;
-  height: calc(~"100% - 240px");
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -104,6 +103,8 @@
 
   position: absolute;
   transition: all .35s ease;
+
+  top: calc(50vh - 16px);
   width: calc(~"100% - 40px");
 }
 
