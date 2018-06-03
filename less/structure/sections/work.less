@@ -5,18 +5,20 @@
   background: @gray-lighter url(../img/svg/syntax-pattern-rev.svg) 0 0 repeat;
   background-size: 820px auto;
   background-position: -205px 0;
+  -webkit-clip-path: polygon(0 0, 100% 20px, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 20px, 100% 100%, 0 100%);
 
-    &:after {
-      left:0;
-      width:100%;
-      bottom:-20px;
-      content: " ";
-      display:block;
-      position:absolute;
-      border-style: solid;
-      border-width: 0 100vw 20px 0;
-      border-color: transparent @gray-lighter transparent transparent;
-    }
+    // &:after {
+    //   left:0;
+    //   width:100%;
+    //   bottom:-20px;
+    //   content: " ";
+    //   display:block;
+    //   position:absolute;
+    //   border-style: solid;
+    //   border-width: 0 100vw 20px 0;
+    //   border-color: transparent @gray-lighter transparent transparent;
+    // }
 
 
     .project {
@@ -58,29 +60,7 @@
         .project--block {
           padding: 20px;
           min-height: 220px;
-
-          &:before, &:after {
-            top: 0;
-            bottom: 0;
-            right: 100%;
-            content: "";
-            width: 100%;
-            display: block;
-            position: absolute;
-            transition: right .5s ease 0s;
-          }
-
-          &:before {
-            z-index: 40;
-            opacity: .5;
-            background: @color2;
-          }
-
-          &:after {
-            z-index: 50;
-            opacity: .75;
-            background: @color4;
-          }
+          background: @black;
 
           .project--teaser {
             top: 0;
@@ -91,6 +71,7 @@
             opacity: .5;
             display: block;
             position: absolute;
+            transition: opacity .25s ease, transform .5s ease;
           }
           .project--title {
             z-index: 100;
@@ -112,10 +93,13 @@
                 font-size: 16px;
                 position: relative;
                 transform: translateX(-20px);
-                transition: all .35s ease .0s;
+                transition: all .25s ease .0s;
 
                   i { margin-right: 3px; }
+
               }
+
+              svg path { fill: @color3; }
           }
         }
 
@@ -129,13 +113,9 @@
             }
 
             .project--block {
-              &:before {
-                right: 0;
-                transition: right .5s ease 0s;
-              }
-              &:after {
-                right: 0;
-                transition: right .35s ease .35s;
+              .project--teaser {
+                opacity: .25;
+                transform: scale(1.2);
               }
 
               .project--brief {
@@ -144,11 +124,11 @@
                   transform: translateX(0px);
                   transition: all .35s ease .35s;
 
-                    &:nth-of-type(2) { transition: all .35s ease .5s; }
-                    &:nth-of-type(3) { transition: all .35s ease .6s; }
-                    &:nth-of-type(4) { transition: all .35s ease .7s; }
-                    &:nth-of-type(5) { transition: all .35s ease .8s; }
-                    &:nth-of-type(6) { transition: all .35s ease .9s; }
+                    &:nth-of-type(2) { transition: all .35s ease .4s; }
+                    &:nth-of-type(3) { transition: all .35s ease .5s; }
+                    &:nth-of-type(4) { transition: all .35s ease .6s; }
+                    &:nth-of-type(5) { transition: all .35s ease .7s; }
+                    &:nth-of-type(6) { transition: all .35s ease .8s; }
                 }
               }
             }
@@ -164,20 +144,7 @@
           }
 
           .project--block {
-            &:before,
-            &:after {
-              right: 66.67%;
-              opacity: .75;
-              transform: rotate(-2.5deg);
-            }
-
-            &:after {
-              top: 16.67%;
-              right: 33.34%;
-              opacity: .5;
-              bottom: -20%;
-            }
-
+            .project--teaser { opacity: .25; }
             .project--brief {
               span {
                 opacity: 1;

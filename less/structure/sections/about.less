@@ -1,9 +1,6 @@
 .site--about {
   padding: 60px 0;
   position: relative;
-  // background: url(../img/about-bg.jpg) center center no-repeat;
-  background-size: cover;
-  box-shadow: 0 0 25px rgba(0,0,0,.5);
   z-index: 100;
 
 
@@ -13,25 +10,25 @@
         p { width: 100%; }
       }
 
-  &:before,
-  &:after {
-    position:absolute;
-    content: " ";
-    display:block;
-    left:0;
-    top:-20px;
-    width:100%;
-    border-style: solid;
-    border-width: 0 100vw 20px 0;
-    border-color: transparent transparent @white transparent;
-  }
-
-  &:after {
-    top: auto;
-    bottom: -40px;
-    border-width: 20px 100vw 20px 0;
-    border-color: @white transparent transparent transparent;
-  }
+  // &:before,
+  // &:after {
+  //   position:absolute;
+  //   content: " ";
+  //   display:block;
+  //   left:0;
+  //   top:-20px;
+  //   width:100%;
+  //   border-style: solid;
+  //   border-width: 0 100vw 20px 0;
+  //   border-color: transparent transparent @white transparent;
+  // }
+  //
+  // &:after {
+  //   top: auto;
+  //   bottom: -40px;
+  //   border-width: 20px 100vw 20px 0;
+  //   border-color: @white transparent transparent transparent;
+  // }
 
   @media @mobile-all { padding: 40px 0; }
 }

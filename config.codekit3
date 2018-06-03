@@ -7,7 +7,7 @@
 		"uuidString": "AD4607B5-CFF0-401C-9700-26D51B9D766D"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26680",
 "files": {
 	"\/css\/style.css": {
 		"aP": 1,
@@ -22,6 +22,7 @@
 	"\/img\/about-bg.jpg": {
 		"ft": 16384,
 		"iS": 152918,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/about-bg.jpg",
 		"oF": 0,
@@ -32,6 +33,7 @@
 	"\/img\/hero-bg.jpg": {
 		"ft": 16384,
 		"iS": 201917,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/hero-bg.jpg",
 		"oF": 0,
@@ -81,7 +83,8 @@
 		},
 	"\/img\/project-images\/project-1\/responsive.jpg": {
 		"ft": 16384,
-		"iS": 176326,
+		"iS": 172318,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/project-images\/project-1\/responsive.jpg",
 		"oF": 0,
@@ -91,7 +94,8 @@
 		},
 	"\/img\/project-images\/project-1\/top-lg.jpg": {
 		"ft": 16384,
-		"iS": 143477,
+		"iS": 142395,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/project-images\/project-1\/top-lg.jpg",
 		"oF": 0,
@@ -99,29 +103,164 @@
 		"opt": 1,
 		"q": 100
 		},
-	"\/img\/project-images\/project-front-1.jpg": {
+	"\/img\/project-images\/project-2\/responsive.jpg": {
 		"ft": 16384,
-		"iS": 135257,
+		"iS": 316640,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/project-images\/project-front-1.jpg",
+		"oAP": "\/img\/project-images\/project-2\/responsive.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
-	"\/img\/project-images\/project-front-2.jpg": {
+	"\/img\/project-images\/project-2\/top-lg.jpg": {
 		"ft": 16384,
-		"iS": 113631,
+		"iS": 282524,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/project-images\/project-front-2.jpg",
+		"oAP": "\/img\/project-images\/project-2\/top-lg.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/project-images\/project-3\/responsive.jpg": {
+		"ft": 16384,
+		"iS": 176326,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/project-images\/project-3\/responsive.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/project-images\/project-3\/top-lg.jpg": {
+		"ft": 16384,
+		"iS": 143477,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/project-images\/project-3\/top-lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/project-images\/project-4\/responsive.jpg": {
+		"ft": 16384,
+		"iS": 172318,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/project-images\/project-4\/responsive.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/project-images\/project-4\/top-lg.jpg": {
+		"ft": 16384,
+		"iS": 142395,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/project-images\/project-4\/top-lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/project-images\/project-5\/responsive.jpg": {
+		"ft": 16384,
+		"iS": 187330,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/project-images\/project-5\/responsive.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/project-images\/project-5\/top-lg.jpg": {
+		"ft": 16384,
+		"iS": 282544,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/project-images\/project-5\/top-lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/project-images\/project-6\/responsive.jpg": {
+		"ft": 16384,
+		"iS": 342550,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/project-images\/project-6\/responsive.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/project-images\/project-6\/top-lg.jpg": {
+		"ft": 16384,
+		"iS": 269218,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/project-images\/project-6\/top-lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/project-images\/project-7\/responsive.jpg": {
+		"ft": 16384,
+		"iS": 427342,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/project-images\/project-7\/responsive.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/project-images\/project-7\/top-lg.jpg": {
+		"ft": 16384,
+		"iS": 328381,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/project-images\/project-7\/top-lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/project-images\/project-8\/responsive.jpg": {
+		"ft": 16384,
+		"iS": 427342,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/project-images\/project-8\/responsive.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/project-images\/project-8\/top-lg.jpg": {
+		"ft": 16384,
+		"iS": 328381,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/project-images\/project-8\/top-lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/project-images\/project-front-thumb-1.jpg": {
 		"ft": 16384,
-		"iS": 75501,
+		"iS": 195742,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/project-images\/project-front-thumb-1.jpg",
 		"oF": 0,
@@ -129,19 +268,32 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/project-images\/project-front-thumb-2.jpg": {
+	"\/img\/project-images\/project-front-thumb-10.jpg": {
 		"ft": 16384,
-		"iS": 76248,
+		"iS": 79049,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/project-images\/project-front-thumb-2.jpg",
+		"oAP": "\/img\/project-images\/project-front-thumb-10.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
+	"\/img\/project-images\/project-front-thumb-2.jpg": {
+		"ft": 16384,
+		"iS": 38466,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/project-images\/project-front-thumb-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/img\/project-images\/project-front-thumb-3.jpg": {
 		"ft": 16384,
-		"iS": 79162,
+		"iS": 75501,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/project-images\/project-front-thumb-3.jpg",
 		"oF": 0,
@@ -151,7 +303,8 @@
 		},
 	"\/img\/project-images\/project-front-thumb-4.jpg": {
 		"ft": 16384,
-		"iS": 70143,
+		"iS": 76248,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/project-images\/project-front-thumb-4.jpg",
 		"oF": 0,
@@ -161,7 +314,8 @@
 		},
 	"\/img\/project-images\/project-front-thumb-5.jpg": {
 		"ft": 16384,
-		"iS": 88754,
+		"iS": 79162,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/project-images\/project-front-thumb-5.jpg",
 		"oF": 0,
@@ -171,7 +325,8 @@
 		},
 	"\/img\/project-images\/project-front-thumb-6.jpg": {
 		"ft": 16384,
-		"iS": 54753,
+		"iS": 70143,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/project-images\/project-front-thumb-6.jpg",
 		"oF": 0,
@@ -181,7 +336,8 @@
 		},
 	"\/img\/project-images\/project-front-thumb-7.jpg": {
 		"ft": 16384,
-		"iS": 40543,
+		"iS": 88754,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/project-images\/project-front-thumb-7.jpg",
 		"oF": 0,
@@ -191,9 +347,21 @@
 		},
 	"\/img\/project-images\/project-front-thumb-8.jpg": {
 		"ft": 16384,
-		"iS": 79049,
+		"iS": 54753,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/project-images\/project-front-thumb-8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/project-images\/project-front-thumb-9.jpg": {
+		"ft": 16384,
+		"iS": 40543,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/project-images\/project-front-thumb-9.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -202,6 +370,7 @@
 	"\/img\/project-images\/project-placeholder-1.jpg": {
 		"ft": 16384,
 		"iS": 223965,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/project-images\/project-placeholder-1.jpg",
 		"oF": 0,
@@ -212,6 +381,7 @@
 	"\/img\/project-images\/project-placeholder-2.jpg": {
 		"ft": 16384,
 		"iS": 113360,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/project-images\/project-placeholder-2.jpg",
 		"oF": 0,
@@ -222,6 +392,7 @@
 	"\/img\/project-images\/project-placeholder-3.jpg": {
 		"ft": 16384,
 		"iS": 198099,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/project-images\/project-placeholder-3.jpg",
 		"oF": 0,
@@ -639,14 +810,21 @@
 	"\/projects\/project-1.html": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/projects\/project-1.html",
+		"oF": 0
+		},
+	"\/projects\/project-10.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/projects\/project-10.html",
 		"oF": 0
 		},
 	"\/projects\/project-2.html": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/projects\/project-2.html",
 		"oF": 0
 		},
@@ -660,14 +838,14 @@
 	"\/projects\/project-4.html": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/projects\/project-4.html",
 		"oF": 0
 		},
 	"\/projects\/project-5.html": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/projects\/project-5.html",
 		"oF": 0
 		},
@@ -690,6 +868,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/projects\/project-8.html",
+		"oF": 0
+		},
+	"\/projects\/project-9.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/projects\/project-9.html",
 		"oF": 0
 		},
 	"\/README.md": {
@@ -719,7 +904,8 @@
 	"creationDate": 528480844,
 	"displayValue": "Portfolio",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-ron"
+	"iconImageName": "meme-ron",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -727,6 +913,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -1290,6 +1477,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
@@ -2517,6 +2708,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
