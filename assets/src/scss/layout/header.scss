@@ -58,7 +58,7 @@
 .site-header__logo {
   color: $white;
   font-weight: 900;
-  padding-left: 45px;
+  padding-left: 35px;
   position: relative;
   white-space: nowrap;
   display: inline-block;
@@ -77,8 +77,8 @@
     content: "";
     left: 0;
     top: 50%;
-    width: 30px;
-    height: 38px;
+    width: 25px;
+    height: 30px;
     display: block;
     position: absolute;
     background: url(../img/svg/sd-logo.svg);
@@ -93,8 +93,8 @@
     }
 
     .scrolled & {
-      width: 35px;
-      height: 45px;
+      width: 25px;
+      height: 30px;
     }
   }
 }
@@ -111,9 +111,13 @@
 }
 
 .site-header__navigation-menu-item {
-  margin-left: 30px;
+  margin-left: 5px;
   position: relative;
   display: inline-block;
+
+  @include breakpoint-min($main-breakpoint) {
+    margin-left: 30px;
+  }
 
   span.icon {
     width: 25px;
