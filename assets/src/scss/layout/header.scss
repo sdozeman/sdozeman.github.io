@@ -74,7 +74,13 @@
     padding-left: 65px;
   }
 
-  .scrolled & { padding-left: 35px; }
+  .scrolled & { 
+    padding-left: 35px; 
+
+    @include breakpoint-min($main-breakpoint) {
+      padding-left: 45px;
+    }
+  }
 
   &:hover { text-decoration: none; }
 
