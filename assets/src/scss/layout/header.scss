@@ -95,6 +95,11 @@
     .scrolled & {
       width: 25px;
       height: 30px;
+
+      @include breakpoint-min($main-breakpoint) {
+        width: 35px;
+        height: 45px;
+      }
     }
   }
 }
