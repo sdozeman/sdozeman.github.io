@@ -37,7 +37,7 @@ article {
         }
 
         &:before, &:after {
-            content: "sass less css3 javascript es6 photoshop illustrator sketch php html5 shopify wordpress twig timber grunt gulp webpack node npm ";
+            content: "sass less css3 javascript es6 photoshop illustrator sketch php html5 wordpress twig timber grunt gulp webpack node npm sass less css3 javascript es6 photoshop illustrator sketch php html5 wordpress twig timber grunt gulp webpack node npm ";
             display: inline;
             overflow: visible;
             white-space: nowrap;
@@ -50,14 +50,14 @@ article {
             font-weight: bold;
 
             left: 0;
-            animation: animatedLeft 120s linear infinite;
+            animation: animatedLeft 240s linear infinite;
         }
 
         &:after {
             @include font-size(40px);
             left: auto;
             right: 0;
-            animation: animatedRight 120s linear infinite;
+            animation: animatedRight 240s linear infinite;
             bottom: ($article-spacing-unit);
         }
     }

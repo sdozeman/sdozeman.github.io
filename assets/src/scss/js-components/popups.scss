@@ -974,3 +974,14 @@ body.compensate-for-scrollbar {
     width: 100%; 
     @include margin-above(1);
 }
+
+.card__attribution {
+    display: block;
+
+    font-size: 12px;
+    text-align: left;
+    text-transform: uppercase;
+
+    @extend .color--gray;
+    @include margin-trailer(.5);
+}

@@ -7,6 +7,14 @@
     background: $black;
     @include space(1px);
 
+    @include breakpoint-min($main-breakpoint) {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
         .site__hero-background {
             top: 0;
             left: 0;
@@ -55,8 +63,8 @@
         }
 
         .wave-ic {
-            top: 25%;
-            right: 5%;
+            top: -15%;
+            right: 0;
             left: auto;
             width: 450px;
             max-width: 40%;
@@ -69,9 +77,16 @@
             animation-iteration-count: infinite;
             transform-origin: 70% 70%;
 
+            @include breakpoint($bp-sm) {
+                top: 0%;
+            }
         }
     
-        .container { z-index: $zindex-base; }
+        .container { 
+            width: 100%;
+            position: relative;
+            z-index: $zindex-base; 
+        }
     
         .site__hero-content {
             max-width: 60%;
@@ -97,6 +112,8 @@
                 text-transform: uppercase;
 
                 @include breakpoint($main-breakpoint) {
+                    font-size: 20px;
+                    
                     span { 
                         display: block; 
                         @include squish-text;
