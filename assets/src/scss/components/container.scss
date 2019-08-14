@@ -1,0 +1,20 @@
+.container, %container {
+    @extend %cf;
+    margin: 0 auto;
+    max-width: $container-max;
+    padding-left: $container-pad;
+    padding-right: $container-pad;
+}
+ 
+.container--small, %container--small {
+    max-width: $container-small-max;
+}
+
+.container--xs {
+    max-width: $container-xs-max;
+}
+
+.container--flush, %container--flush {
+    padding-left: 0;
+    padding-right: 0;
+}

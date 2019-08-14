@@ -1,0 +1,31 @@
+.site-footer {
+    color: $footer-copy;
+    background-color: $footer-gray;
+    padding: ($article-spacing-unit/1.5) 0;
+    padding-top: ($article-spacing-unit/.75);
+}
+
+.mwl, .mwc {
+    @include squish-text();
+    position: relative;
+    
+    &:before {
+        content: "";
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+    }
+}
+
+.mwl:before {
+    background-image: url(../img/svg/heart.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 60px auto;
+}
+.mwc:before {
+    background-image: url(../img/svg/coffee.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+}

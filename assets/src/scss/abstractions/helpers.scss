@@ -1,0 +1,160 @@
+// CLEARFIX
+%clearfix, %cf, .clearfix, .cf {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.float--right {
+    float: right !important;
+}
+
+.float--left {
+    float: left !important;
+}
+
+.float--none {
+    float: none !important;
+}
+
+.text--left {
+    text-align: left  !important;
+}
+
+.text--center {
+    text-align: center !important;
+}
+
+.text--right {
+    text-align: right !important;
+}
+
+.align--left {
+    margin-left:0 !important
+}
+
+.align--right {
+    margin-right: 0 !important;
+}
+
+.trailer--single {
+    @include margin-trailer(1);
+}
+.trailer--double {
+    @include margin-trailer(2);
+}
+
+.trailer--half {
+    @include margin-trailer(.5);
+}
+
+.trailer--none {
+    @include margin-trailer(0);
+}
+
+.hlist, %hlist {
+    padding-left: 0;
+    margin-bottom: 0;
+    > li {
+        display: inline-block;
+    }
+}
+
+%text-invisible {
+    @include squish-text;
+}
+
+.sr-only {
+    @extend %element-invisible;
+}
+
+%element-hidden, .element-hidden {
+    @include element-hidden;
+}
+
+.element-hidden--mobile {
+    @include breakpoint($main-breakpoint) {
+        @include element-hidden;
+    }
+}
+
+.element-hidden--sm {
+    @include breakpoint($bp-sm) {
+        @include element-hidden;
+    }
+}
+
+.element-hidden--md {
+    @include breakpoint($bp-md) {
+        @include element-hidden;
+    }
+}
+
+.element-hidden--desk {
+    @include breakpoint-min($main-breakpoint) {
+        @include element-hidden;
+    }
+}
+
+// Hide elements visually, but keep them available for screen-readers.
+//
+// Used for information required for screen-reader users to understand and use
+// the site where visual display is undesirable. Information provided in this
+// manner should be kept concise, to avoid unnecessary burden on the user.
+// "!important" is used to prevent unintentional overrides.
+@mixin element-invisible {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+}
+
+%element-invisible, .element-invisible {
+    @include element-invisible;
+}
+
+// Reverts 'element-invisible'.
+@mixin element-visible {
+    position: inherit !important;
+    clip: inherit;
+    overflow: inherit;
+    height: inherit;
+}
+
+%element-visible {
+    @include element-visible;
+}
+
+// The .element-focusable class extends the .element-invisible class to allow
+// the element to be focusable when navigated to via the keyboard.
+@mixin element-focusable {
+    &:active,
+    &:focus {
+        position: static !important;
+        clip: auto;
+        overflow: visible;
+        height: auto;
+    }
+}
+
+%element-focusable {
+    @include element-focusable;
+}
+
+.color--red     { color: $red;    }
+.color--pink    { color: $pink;   }
+.color--blue    { color: $blue;   }
+.color--yellow  { color: $yellow; }
+.color--gray    { color: $gray;   }
+.color--green   { color: $green;  }

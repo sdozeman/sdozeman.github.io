@@ -1,704 +1,456 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
   <head>
+    <meta charset="utf-8">
   	<title>Sean Dozeman | Interactive Front-end Developer</title>
-  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  	<link rel="icon" href="img/icons/favicon.ico?v=2">
-  	<link rel="apple-touch-icon" href="img/icons/favicon-76.png" sizes="76x76">
-  	<link rel="apple-touch-icon" href="img/icons/favicon-120.png" sizes="120x120">
-  	<link rel="apple-touch-icon" href="img/icons/favicon-152.png" sizes="152x152">
-  	<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="icon"             href="assets/dist/img/icons/favicon.ico?v=2">
+  	<link rel="apple-touch-icon" href="assets/dist/img/icons/favicon-76.png" sizes="76x76">
+  	<link rel="apple-touch-icon" href="assets/dist/img/icons/favicon-120.png" sizes="120x120">
+  	<link rel="apple-touch-icon" href="assets/dist/img/icons/favicon-152.png" sizes="152x152">
+    <link rel="stylesheet"       href="assets/dist/css/styles.css" type="text/css" media="screen" />
+
+    <script type='text/javascript' src='assets/dist/js/modernizr.js?ver=2'></script>
   </head>
 
   <body>
-    <section class="page">
-      <header class="site-header">
-        <div class="container">
-          <a href="https://sdozeman.github.io/" class="site--logo" title="Sean Dozeman">Sean Dozeman</a>
+    <header id="site-header" class="site-header">
+      <div class="container site-header__container">
+        <a href="https://sdozeman.github.io/" class="site-header__logo" title="Sean Dozeman"><span>Sean Dozeman</span></a>
 
-          <a href="#" class="site--navigation-btn">
-            <div class="toggle"><span></span><span></span><span></span><span></span></div>
-            <span class="text">Menu</span>
-          </a>
+        <nav class="site-header__navigation">
+          <ul class="site-header__navigation-menu">
+            <li class="site-header__navigation-menu-item element-hidden--mobile">
+              <a href="#sec-2" class="site-header__navigation-menu-link color--pink">Work</a>
+            </li>
+            <li class="site-header__navigation-menu-item element-hidden--mobile">
+              <a href="#sec-3" class="site-header__navigation-menu-link color--red">About</a>
+            </li>
+            <li class="site-header__navigation-menu-item menu-item--icon icon--linkedin">
+              <a href="https://www.linkedin.com/in/seandozeman/" class="site-header__navigation-menu-link color--blue" target="_blank">in</a>
+            </li>
+            <li class="site-header__navigation-menu-item menu-item--icon icon--linkedin">
+              <a href="mailto:fake@mail.com" class="site-header__navigation-menu-link color--gray" data-mail-user="sdozeman" data-mail-domain="gmail">@</a>
+            </li>
+          </ul>
+        </nav>
 
-          <nav class="site--navigation">
-            <ul class="site--navigation-menu">
-              <li class="site--navigation-menu-item">
-                <a href="#sec-2" class="site--navigation-menu-url">About</a>
-              </li>
-              <li class="site--navigation-menu-item">
-                <a href="#sec-3" class="site--navigation-menu-url">Projects</a>
-              </li>
-              <li class="site--navigation-menu-item menu-item--icon icon--linkedin">
-                <a href="https://www.linkedin.com/in/seandozeman/" target="_blank">
-                  <span class="text">Linkedin</span>
-                  <span class="icon linkedin">
-                    <svg version="1.1" viewBox="0 0 50 49" preserveAspectRatio="xMinYMin meet" class="svg-content">
-                      <path fill-rule="evenodd"
- d="M40.205,49.007 L40.205,31.690 C40.205,27.872 39.247,25.412 34.686,25.412 C30.667,25.412 28.985,26.130 28.985,31.416 L28.985,48.861 L18.922,48.983 L18.922,15.938 L28.569,15.815 L28.569,20.017 L28.571,21.208 C31.428,18.409 34.373,16.292 39.078,16.292 C44.629,16.292 49.998,18.617 49.998,26.193 L49.998,48.861 L40.205,49.007 ZM5.528,11.045 C2.476,11.045 0.002,8.571 0.002,5.517 C0.002,2.466 2.476,-0.007 5.528,-0.007 C8.579,-0.007 11.055,2.466 11.055,5.517 C11.055,8.571 8.579,11.045 5.528,11.045 ZM10.470,48.854 L0.374,48.983 L0.374,15.938 L10.470,15.812 L10.470,48.854 Z"/>
-                    </svg>
-                  </span>
-                </a>
-              </li>
-              <li class="site--navigation-menu-item menu-item--icon icon--linkedin">
-                <a href="mailto:fake@mail.com" data-mail-user="sdozeman" data-mail-domain="gmail.com">
-                  <span class="text">Email</span>
-                  <span class="icon email">
-                    <svg version="1.1" viewBox="0 0 50 29" preserveAspectRatio="xMinYMin meet" class="svg-content">
-                      <path fill-rule="evenodd"
-                       d="M21.279,23.578 L14.668,29.009 L12.832,19.782 L50.001,-0.009 L18.001,22.130 L21.279,23.578 ZM9.170,18.607 L-0.001,14.080 L50.001,-0.009 L9.170,18.607 ZM49.953,0.049 L32.347,26.798 L21.156,21.837 L49.953,0.049 Z"/>
-                    </svg>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
+      </div>
+    </header>
+      
+    <div class="page" role="document">
       <main class="site-content">
-        <article class="site--hero" id="sec-1">
-          <div class="site--hero-background">
-            <div class="bg-layer-1" data-parallaxify-range-x="-40" data-parallaxify-range-y="-20"></div>
-            <div class="bg-layer-2" data-parallaxify-range-x="5" data-parallaxify-range-y="5"></div>
-            <div class="bg-layer-3" data-parallaxify-range-x="20" data-parallaxify-range-y="10"></div>
+
+        <!-- Hero -->
+        <article id="sec-1" class="site__hero">
+          <div class="container">
+            <div class="site__hero-content">
+              <h1>Hi<span class="color--red">!</span><br>I<span class="color--pink">&rsquo;</span>m Sean<span class="color--blue">.</span></h1>
+              <h2>Front-End <span>/</span> Full-Stack <span>/</span> Web Developer</h2>
+            </div>
           </div>
 
+          <div class="site__hero-background">
+            <img src="assets/dist/img/svg/wave.svg" class="wave-ic" data-speed="50" data-opacity="1" alt="Hello!" />
+            <div class="site__hero-background-layer layer-1" data-speed="5"  data-opacity="1"></div>
+            <div class="site__hero-background-layer layer-2" data-speed="15" data-opacity=".75"></div>
+            <div class="site__hero-background-layer layer-3" data-speed="25" data-opacity=".5"></div>
+          </div>
+        </article>
+
+        <!-- Work -->
+        <article class="site__work" id="sec-2">
           <div class="container">
-            <div class="site--hero-intro">
-              <h1 class="main-headline">Front-end developer.</h1>
-              <p class="sub-headline">Optimized, organic, semantic code. User-centered, scalable solutions and experiences that work in every browser and on every screen size.<br><br>I’m Sean, this is what I do.</p>
+            <div class="grid">
+              <div class="grid__item one-whole md-one-half">
+
+                <div class="card portfolio__item card--left color--blue parallax-layer" data-speed="1">
+                  <a class="portfolio__item-link" data-fancybox data-touch="false" data-src="#portfolio__item-1" href="javascript:;">
+                    <div class="portfolio__item-image">
+                      <img class="background" src="assets/dist/img/project-images/oppytransport/oppy-banner.jpg" srcset="assets/dist/img/project-images/oppytransport/oppy-banner.jpg 1x, assets/dist/img/project-images/oppytransport/oppy-banner@2x.jpg 2x">
+                      <span class="middleground"></span>
+                      <img class="foreground" src="assets/dist/img/project-images/oppytransport/transport-logo.png" srcset="assets/dist/img/project-images/oppytransport/transport-logo.png 1x, assets/dist/img/project-images/oppytransport/transport-logo@2x.png 2x">
+                    </div>
+                    <h2>Oppy <br>Transport</h2>
+                  </a>
+                  <div class="fancybox-hide card-popup" id="portfolio__item-1">
+                    <div class="card-popup__content color--blue">
+
+                      <header class="card__header">
+                        <div class="grid">
+                          <div class="grid__item one-whole md-one-third">
+                            <h2 class="card__title">Oppy<br>Transport</h2>
+                            <h3 class="card__slogan">A World of Fresh Possibilities</h3>
+                          </div>
+
+                          <div class="grid__item one-whole md-two-thirds">
+                            <p>Oppy Transport is a third party logistics provider and sister company of The Oppenheimer Group, with over 160 years of experience in the produce industry.</p>
+                            <p>Considering the ever-changing nature of perishable supply chain, they needed to increase their web presence and streamline their new carrier application form.</p>
+                            <p><a href="https://oppytransport.com" target="_blank">visit site »</a></p>
+                          </div>
+                        </div>
+                      </header>
+        
+                      <div class="card__main">
+                        <img class="card__featured" src="assets/dist/img/project-images/oppytransport/oppy-banner-main.jpg" />
+
+                        <div class="grid">
+                          <div class="grid__item one-whole md-one-third">
+                              <h4 class="color--blue">technologies & features:</h4>
+                              <ul>
+                                <li>PHP</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>LESS</li>
+                                <li>JavaScript</li>
+                                <li>Grunt</li>
+                                <li>WordPress</li>
+                                <li>Responsive Design</li>
+                                <li>Sticky Navigation</li>
+                                <li>Fade-in Content</li>
+                                <li>Contact Form</li>
+                                <li>Anti-spam Protection</li>
+                              </ul>
+                          </div>
+                          <div class="grid__item one-whole md-two-thirds">
+                            <img class="card__additional" src="assets/dist/img/project-images/oppytransport/oppy-mobile-split.jpg" srcset="assets/dist/img/project-images/oppytransport/oppy-mobile-split.jpg 1x, assets/dist/img/project-images/oppytransport/oppy-mobile-split@2x.jpg 2x">
+                          </div>
+                        </div>
+                      </div>
+        
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="grid__item one-whole md-one-half">
+
+                <div class="card portfolio__item card--right color--yellow parallax-layer" data-speed="2">
+                  <a class="portfolio__item-link" rel="nofollow" data-fancybox data-touch="false" data-src="#portfolio__item-2" href="javascript:;">
+                    <div class="portfolio__item-image">
+                      <img class="background" src="assets/dist/img/project-images/jonesbrown/jonesb-banner.jpg" srcset="assets/dist/img/project-images/jonesbrown/jonesb-banner.jpg 1x, assets/dist/img/project-images/jonesbrown/jonesb-banner@2x.jpg 2x">
+                      <span class="middleground"></span>
+                      <img class="foreground" src="assets/dist/img/project-images/jonesbrown/jonesb-logo.png" srcset="assets/dist/img/project-images/jonesbrown/jonesb-logo.png 1x, assets/dist/img/project-images/jonesbrown/jonesb-logo@2x.png 2x">
+                    </div>
+                    <h2>Jones <br>Brown</h2>
+                  </a>
+                  <div class="fancybox-hide card-popup" id="portfolio__item-2">
+                    <div class="card-popup__content color--yellow">
+                      <header class="card__header">
+                        <div class="grid">
+                          <div class="grid__item one-whole md-one-third">
+                            <h2 class="card__title">Jones Brown</h2>
+                            <h3 class="card__slogan">Professionals who care more</h3>
+                          </div>
+
+                          <div class="grid__item one-whole md-two-thirds">
+                            <p>Jones Brown is an insurance firm who works with a diverse range of individuals and global corporations offering clients a uniquely Canadian perspective, rooted in a sense of independence, a long-term view, and an unwavering commitment to excellence.</p>
+                            <p><a href="https://jonesbrown.com" target="_blank">visit site »</a></p>
+                          </div>
+                        </div>
+                      </header>
+        
+                      <div class="card__main">
+                        <img class="card__featured" src="assets/dist/img/project-images/jonesbrown/jonesb-banner-main.jpg" />
+
+                        <div class="grid">
+                          <div class="grid__item one-whole md-one-third">
+                              <h4 class="color--yellow">technologies & features:</h4>
+                              <ul>
+                                <li>PHP</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>SASS</li>
+                                <li>JavaScript</li>
+                                <li>Gulp</li>
+                                <li>WordPress</li>
+                                <li>Twig & Timber</li>
+                                <li>Responsive Design</li>
+                              </ul>
+                          </div>
+                          <div class="grid__item one-whole md-two-thirds">
+                            <img class="card__additional" src="assets/dist/img/project-images/jonesbrown/jonesb-mobile-split.jpg" srcset="assets/dist/img/project-images/jonesbrown/jonesb-mobile-split.jpg 1x, assets/dist/img/project-images/jonesbrown/jonesb-mobile-split@2x.jpg 2x">
+                          </div>
+                        </div>
+                      </div>
+              
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="grid__item one-whole md-one-half">
+
+                <div class="card portfolio__item card--left color--pink parallax-layer" data-speed="1">
+                  <a class="portfolio__item-link" rel="nofollow" data-fancybox data-touch="false" data-src="#portfolio__item-3" href="javascript:;">
+                    <div class="portfolio__item-image">
+                      <img class="background" src="assets/dist/img/project-images/oceansidepole/oceanside-banner.jpg" srcset="assets/dist/img/project-images/oceansidepole/oceanside-banner.jpg 1x, assets/dist/img/project-images/oceansidepole/oceanside-banner@2x.jpg 2x">
+                      <span class="middleground"></span>
+                      <img class="foreground" src="assets/dist/img/project-images/oceansidepole/oceanside-logo.png" srcset="assets/dist/img/project-images/oceansidepole/oceanside-logo.png 1x, assets/dist/img/project-images/oceansidepole/oceanside-logo@2x.png 2x">
+                    </div>
+                    <h2>Oceanside <br>Pole</h2>
+                  </a>
+                  <div class="fancybox-hide card-popup" id="portfolio__item-3">
+                    <div class="card-popup__content color--pink">
+
+                      <header class="card__header">
+                        <div class="grid">
+                          <div class="grid__item one-whole md-one-third">
+                            <h2 class="card__title">Oceanside <br>Pole</h2>
+                            <h3 class="card__slogan">On a mission, since 1939</h3>
+                          </div>
+
+                          <div class="grid__item one-whole md-two-thirds">
+                            <p>Oceanside Pole has been growing vine-ripened tomatoes for over 70 years, and is the last remaining pole tomato producer in California.</p>
+                            <p>Their new website is interactive, informative, and unique just like them - with layered content, fade-ins, a full-width background video, and much more.</p>
+                            <p><a href="https://oceansidepole.com" target="_blank">visit site »</a></p>
+                          </div>
+                        </div>
+                      </header>
+        
+                      <div class="card__main">
+                        <img class="card__featured" src="assets/dist/img/project-images/oceansidepole/oceanside-banner-main.jpg" />
+
+                        <div class="grid">
+                          <div class="grid__item one-whole md-one-third">
+                              <h4 class="color--pink">technologies & features:</h4>
+                              <ul>
+                                <li>PHP</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>LESS</li>
+                                <li>JavaScript</li>
+                                <li>WordPress</li>
+                                <li>Responsive Design</li>
+                                <li>Fixed Navigation</li>
+                                <li>Fade-in Content</li>
+                                <li>Contact Form</li>
+                                <li>Anti-spam Protection</li>
+                              </ul>
+                          </div>
+                          <div class="grid__item one-whole md-two-thirds">
+                            <img class="card__additional" src="assets/dist/img/project-images/oceansidepole/oceanside-mobile-split.jpg" srcset="assets/dist/img/project-images/oceansidepole/oceanside-mobile-split.jpg 1x, assets/dist/img/project-images/oceansidepole/oceanside-mobile-split@2x.jpg 2x">
+                          </div>
+                        </div>
+                      </div>
+        
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+              <div class="grid__item one-whole md-one-half">
+
+                <div class="card portfolio__item card--right color--red parallax-layer" data-speed="2">
+                  <a class="portfolio__item-link" rel="nofollow" data-fancybox data-touch="false" data-src="#portfolio__item-4" href="javascript:;">
+                    <div class="portfolio__item-image">
+                      <img class="background" src="assets/dist/img/project-images/orkincanada/orkin-banner.jpg" srcset="assets/dist/img/project-images/orkincanada/orkin-banner.jpg 1x, assets/dist/img/project-images/orkincanada/orkin-banner@2x.jpg 2x">
+                      <span class="middleground"></span>
+                      <img class="foreground" src="assets/dist/img/project-images/orkincanada/orkin-logo.png" srcset="assets/dist/img/jonesbrown/project-images/orkincanada/orkin-logo.png 1x, assets/dist/img/project-images/orkincanada/orkin-logo@2x.png 2x">
+                    </div>
+                    <h2>Orkin <br>Canada</h2>
+                  </a>
+                  <div class="fancybox-hide card-popup" id="portfolio__item-4">
+                    <div class="card-popup__content color--red">
+                      <header class="card__header">
+                        <div class="grid">
+                          <div class="grid__item one-whole md-one-third">
+                            <h2 class="card__title">Orkin Canada</h2>
+                            <h3 class="card__slogan">Pest control down to a science</h3>
+                          </div>
+
+                          <div class="grid__item one-whole md-two-thirds">
+                            <p>Orkin Canada helps you remove unwanted pests… and stop them from coming back.</p>
+                            <p>As a leader in the pest control industry, Orkin Canada needed a new and professional looking website to help match their reputation.</p>
+                            <p><a href="https://orkincanada.com" target="_blank">visit site »</a></p>
+                          </div>
+                        </div>
+                      </header>
+        
+                      <div class="card__main">
+                        <img class="card__featured" src="assets/dist/img/project-images/orkincanada/orkin-banner-main.jpg" />
+
+                        <div class="grid">
+                          <div class="grid__item one-whole md-one-third">
+                              <h4 class="color--red">technologies & features:</h4>
+                              <ul>
+                                <li>PHP</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>SASS</li>
+                                <li>JavaScript</li>
+                                <li>Webpack</li>
+                                <li>WordPress</li>
+                                <li>Twig & Timber</li>
+                                <li>Responsive Design</li>
+                                <li>Sticky Navigation</li>
+                                <li>Custom Post Types</li>
+                              </ul>
+                          </div>
+                          <div class="grid__item one-whole md-two-thirds">
+                            <img class="card__additional" src="assets/dist/img/project-images/orkincanada/orkin-mobile-split.jpg" srcset="assets/dist/img/project-images/orkincanada/orkin-mobile-split.jpg 1x, assets/dist/img/project-images/orkincanada/orkin-mobile-split@2x.jpg 2x">
+                          </div>
+                        </div>
+                      </div>
+              
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="grid__item one-whole md-one-half">
+
+                  <div class="card portfolio__item card--left color--blue parallax-layer" data-speed="1">
+                    <a class="portfolio__item-link" rel="nofollow" data-fancybox data-touch="false" data-src="#portfolio__item-5" href="javascript:;">
+                      <div class="portfolio__item-image">
+                        <img class="background" src="assets/dist/img/project-images/grayline/grayline-banner.jpg" srcset="assets/dist/img/project-images/grayline/grayline-banner.jpg 1x, assets/dist/img/project-images/grayline/grayline-banner@2x.jpg 2x">
+                        <span class="middleground"></span>
+                        <img class="foreground" src="assets/dist/img/project-images/grayline/grayline-logo.png" srcset="assets/dist/img/project-images/grayline/grayline-logo.png 1x, assets/dist/img/project-images/grayline/grayline-logo@2x.png 2x">
+                      </div>
+                      <h2>Grayline <br>Alaska</h2>
+                    </a>
+                    <div class="fancybox-hide card-popup" id="portfolio__item-5">
+                      <div class="card-popup__content color--blue">
+  
+                        <header class="card__header">
+                          <div class="grid">
+                            <div class="grid__item one-whole md-one-third">
+                              <h2 class="card__title">Grayline <br>Alaska</h2>
+                              <h3 class="card__slogan">Endless beauty awaits</h3>
+                            </div>
+  
+                            <div class="grid__item one-whole md-two-thirds">
+                              <p>For over 70 years, Gray Line Alaska has been helping travelers explore Alaska and the Yukon. Offer an extensive array of Alaska tour packages from multi-day and escorted itineraries to Denali rail tours and sightseeing trips. Gray Line has the knowledge, expertise, and infrastructure for one-stop shopping to create a memorable Alaska vacation.</p>
+                              <p><a href="https://https://www.graylinealaska.com/" target="_blank">visit site »</a></p>
+                            </div>
+                          </div>
+                        </header>
+          
+                        <div class="card__main">
+                          <img class="card__featured" src="assets/dist/img/project-images/grayline/grayline-banner-main.jpg" />
+
+                          <div class="grid">
+                            <div class="grid__item one-whole md-one-third">
+                                <h4 class="color--blue">technologies & features:</h4>
+                                <ul>
+                                  <li>PHP</li>
+                                  <li>HTML</li>
+                                  <li>CSS</li>
+                                  <li>LESS</li>
+                                  <li>JavaScript</li>
+                                  <li>WordPress</li>
+                                  <li>Twig & Timber</li>
+                                  <li>Responsive Design</li>
+                                </ul>
+                            </div>
+                            <div class="grid__item one-whole md-two-thirds">
+                              <img class="card__additional" src="assets/dist/img/project-images/grayline/grayline-mobile-split.jpg" srcset="assets/dist/img/project-images/grayline/grayline-mobile-split.jpg 1x, assets/dist/img/project-images/grayline/grayline-mobile-split@2x.jpg 2x">
+                            </div>
+                          </div>
+                        </div>
+          
+                      </div>
+                    </div>
+                  </div>
+  
+              </div>
+              <div class="grid__item one-whole md-one-half">
+
+                  <div class="card portfolio__item card--right color--yellow parallax-layer" data-speed="2">
+                    <a class="portfolio__item-link" rel="nofollow" data-fancybox data-touch="false" data-src="#portfolio__item-6" href="javascript:;">
+                      <div class="portfolio__item-image">
+                        <img class="background" src="assets/dist/img/project-images/perpetualvegetable/perpetual-banner.jpg" srcset="assets/dist/img/project-images/perpetualvegetable/perpetual-banner.jpg 1x, assets/dist/img/project-images/perpetualvegetable/perpetual-banner@2x.jpg 2x">
+                        <span class="middleground"></span>
+                        <img class="foreground" src="assets/dist/img/project-images/perpetualvegetable/perpetual-logo.png" srcset="assets/dist/img/project-images/perpetualvegetable/perpetual-logo.png 1x, assets/dist/img/project-images/perpetualvegetable/perpetual-logo@2x.png 2x">
+                      </div>
+                      <h2>Perpetual <br>Vegetable</h2>
+                    </a>
+                    <div class="fancybox-hide card-popup" id="portfolio__item-6">
+                      <div class="card-popup__content color--yellow">
+                        <header class="card__header">
+                          <div class="grid">
+                            <div class="grid__item one-whole md-one-third">
+                              <h2 class="card__title">Perpetual Vegetable</h2>
+                              <h3 class="card__slogan">Life grows on</h3>
+                            </div>
+  
+                            <div class="grid__item one-whole md-two-thirds">
+                              <p>The Randhawa family has been growing fresh produce for many generations, right here in British Columbia.</p>
+                              <p>The new Perpetual Vegetable website showcases an interactive, approachable, and informative design - come take a look.</p>
+                              <p><a href="https://perpetualvegetable.com" target="_blank">visit site »</a></p>
+                            </div>
+                          </div>
+                        </header>
+          
+                        <div class="card__main">
+                          <img class="card__featured" src="assets/dist/img/project-images/perpetualvegetable/perpetual-banner-main.jpg" />
+
+                          <div class="grid">
+                            <div class="grid__item one-whole md-one-third">
+                                <h4 class="color--yellow">technologies & features:</h4>
+                                <ul>
+                                  <li>PHP</li>
+                                  <li>HTML</li>
+                                  <li>CSS</li>
+                                  <li>SASS</li>
+                                  <li>JavaScript</li>
+                                  <li>Webpack</li>
+                                  <li>WordPress</li>
+                                  <li>Responsive Design</li>
+                                </ul>
+                            </div>
+                            <div class="grid__item one-whole md-two-thirds">
+                              <img class="card__additional" src="assets/dist/img/project-images/perpetualvegetable/perpetual-mobile-split.jpg" srcset="assets/dist/img/project-images/perpetualvegetable/perpetual-mobile-split.jpg 1x, assets/dist/img/project-images/perpetualvegetable/perpetual-mobile-split@2x.jpg 2x">
+                            </div>
+                          </div>
+                        </div>
+                
+                      </div>
+                    </div>
+                  </div>
+  
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <!-- About -->
+        <article class="site__about" id="sec-3">
+          <div class="container">
+            <div class="grid just-between align--middle">
+              <div class="grid__item one-whole md-one-half">
+                <img class="trailer--single hey-its-me" src="assets/dist/img/sean.png" srcset="assets/dist/img/sean.png 1x, assets/dist/img/sean@2x.png 2x" alt="Sean Dozeman" />
+              </div>
+              <div class="grid__item one-whole md-one-half">
+                <h3>Optimized, organic, semantic code. User-centered, scalable solutions and experiences that work in every browser and on every screen size.</h3>
+                <p>I’m Sean—a front-end developer from the Greater Seattle area now living in Vancouver, BC.</p>
+                <p>I focus on writing clean, scalable and maintainable code using <strong class="color--red">html5</strong>, <strong class="color--blue">css3</strong>, <strong class="color--yellow">javascript</strong>, and <strong class="color--pink">php</strong>.</p>
+                <p>But my toolbox doesn't stop there, I also utilize additional languages, frameworks, applications, and skills to build solutions depending on the situation.</p>
+              </div>
             </div>
           </div>
         </article>
 
-        <article class="site--about" id="sec-2">
+        <article class="site__cta">
           <div class="container">
-            <h2 class="section--headline reversed" title="About">About</h2>
-            <p>Hi there, my name is Sean. I'm a front-end developer from the Greater Seattle area now living in Vancouver, BC.<br>
-            I enjoy snowboarding, hiking, dogs, video games & building web solutions.<br><br>
-            I focus in writing clean, scalable and maintainable code using <strong>html5</strong>, <strong>css3</strong>, <strong>javascript</strong>, and <strong>php</strong>.<br><br>
-            My toolbox doesn't stop there, I also utilize additional languages, frameworks, applications, and skills to help me achieve building solutions depending on the situation.</p>
-          </div>
-        </article>
-
-        <article class="site--work" id="sec-3">
-          <div class="container">
-            <h2 class="section--headline" title="Projects">Projects</h2>
-            <p>Below are just a few of the recent projects I've worked on.</p><br><br>
-              <div class="flex-row">
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                  <a href="projects/project-1.html" class="project" data-project="project-1">
-                    <div class="project--block">
-                      <span class="project--teaser" style="background: url(img/project-images/project-front-thumb-1.jpg) top center no-repeat; background-size: cover;"></span>
-                      <h3 class="project--title reversed"><span>Oppy Transport</span></h3>
-                      <div class="project--brief">
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          HTML
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          CSS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          JS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          WordPress
-                        </span>
-                      </div>
-                    </div>
-
-                    <span class="project--view">
-                      <svg version="1.1" viewBox="0 0 25 25" preserveAspectRatio="xMinYMin meet" class="svg-content"  width="20px" height="20px">
-                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                         d="M2.795,24.453 L10.223,17.032 C11.750,18.108 13.611,18.742 15.622,18.742 C20.802,18.742 25.000,14.547 25.000,9.372 C25.000,4.197 20.802,0.001 15.622,0.001 C10.443,0.001 6.243,4.197 6.243,9.372 C6.243,11.391 6.884,13.259 7.971,14.788 L0.546,22.206 C-0.135,22.887 -0.187,23.949 0.432,24.567 C1.051,25.185 2.114,25.134 2.795,24.453 ZM15.622,3.126 C19.068,3.126 21.873,5.928 21.873,9.372 C21.873,12.816 19.068,15.617 15.622,15.617 C12.175,15.617 9.371,12.816 9.371,9.372 C9.371,5.928 12.175,3.126 15.622,3.126 Z"/>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                  <a href="projects/project-2.html" class="project" data-project="project-2">
-                    <div class="project--block">
-                      <span class="project--teaser" style="background: url(img/project-images/project-front-thumb-2.jpg) top center no-repeat; background-size: cover;"></span>
-                      <h3 class="project--title reversed"><span>Frank & Able</span></h3>
-                      <div class="project--brief">
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          HTML
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          CSS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          JS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          PHP
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          WordPress
-                        </span>
-                      </div>
-                    </div>
-
-                    <span class="project--view">
-                      <svg version="1.1" viewBox="0 0 25 25" preserveAspectRatio="xMinYMin meet" class="svg-content"  width="20px" height="20px">
-                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                         d="M2.795,24.453 L10.223,17.032 C11.750,18.108 13.611,18.742 15.622,18.742 C20.802,18.742 25.000,14.547 25.000,9.372 C25.000,4.197 20.802,0.001 15.622,0.001 C10.443,0.001 6.243,4.197 6.243,9.372 C6.243,11.391 6.884,13.259 7.971,14.788 L0.546,22.206 C-0.135,22.887 -0.187,23.949 0.432,24.567 C1.051,25.185 2.114,25.134 2.795,24.453 ZM15.622,3.126 C19.068,3.126 21.873,5.928 21.873,9.372 C21.873,12.816 19.068,15.617 15.622,15.617 C12.175,15.617 9.371,12.816 9.371,9.372 C9.371,5.928 12.175,3.126 15.622,3.126 Z"/>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                  <a href="projects/project-3.html" class="project" data-project="project-1">
-                    <div class="project--block">
-                      <span class="project--teaser" style="background: url(img/project-images/project-front-thumb-3.jpg) top center no-repeat; background-size: cover;"></span>
-                      <h3 class="project--title reversed"><span>Wee Wiggles</span></h3>
-                      <div class="project--brief">
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          HTML
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          CSS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          JS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          PHP
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          WordPress
-                        </span>
-                      </div>
-                    </div>
-
-                    <span class="project--view">
-                      <svg version="1.1" viewBox="0 0 25 25" preserveAspectRatio="xMinYMin meet" class="svg-content"  width="20px" height="20px">
-                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                         d="M2.795,24.453 L10.223,17.032 C11.750,18.108 13.611,18.742 15.622,18.742 C20.802,18.742 25.000,14.547 25.000,9.372 C25.000,4.197 20.802,0.001 15.622,0.001 C10.443,0.001 6.243,4.197 6.243,9.372 C6.243,11.391 6.884,13.259 7.971,14.788 L0.546,22.206 C-0.135,22.887 -0.187,23.949 0.432,24.567 C1.051,25.185 2.114,25.134 2.795,24.453 ZM15.622,3.126 C19.068,3.126 21.873,5.928 21.873,9.372 C21.873,12.816 19.068,15.617 15.622,15.617 C12.175,15.617 9.371,12.816 9.371,9.372 C9.371,5.928 12.175,3.126 15.622,3.126 Z"/>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                  <a href="projects/project-4.html" class="project" data-project="project-2">
-                    <div class="project--block">
-                      <span class="project--teaser" style="background: url(img/project-images/project-front-thumb-4.jpg) top center no-repeat; background-size: cover;"></span>
-                      <h3 class="project--title reversed"><span>Sustainable Interiors</span></h3>
-                      <div class="project--brief">
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          HTML
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          CSS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          JS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          WordPress
-                        </span>
-                      </div>
-                    </div>
-
-                    <span class="project--view">
-                      <svg version="1.1" viewBox="0 0 25 25" preserveAspectRatio="xMinYMin meet" class="svg-content"  width="20px" height="20px">
-                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                         d="M2.795,24.453 L10.223,17.032 C11.750,18.108 13.611,18.742 15.622,18.742 C20.802,18.742 25.000,14.547 25.000,9.372 C25.000,4.197 20.802,0.001 15.622,0.001 C10.443,0.001 6.243,4.197 6.243,9.372 C6.243,11.391 6.884,13.259 7.971,14.788 L0.546,22.206 C-0.135,22.887 -0.187,23.949 0.432,24.567 C1.051,25.185 2.114,25.134 2.795,24.453 ZM15.622,3.126 C19.068,3.126 21.873,5.928 21.873,9.372 C21.873,12.816 19.068,15.617 15.622,15.617 C12.175,15.617 9.371,12.816 9.371,9.372 C9.371,5.928 12.175,3.126 15.622,3.126 Z"/>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                  <a href="projects/project-5.html" class="project" data-project="project-3">
-                    <div class="project--block">
-                      <span class="project--teaser" style="background: url(img/project-images/project-front-thumb-5.jpg) top center no-repeat; background-size: cover;"></span>
-                      <h3 class="project--title reversed"><span>City of Lacy, Washington</span></h3>
-                      <div class="project--brief">
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          HTML
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          CSS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          JS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          WordPress
-                        </span>
-                      </div>
-                    </div>
-
-                    <span class="project--view">
-                      <svg version="1.1" viewBox="0 0 25 25" preserveAspectRatio="xMinYMin meet" class="svg-content"  width="20px" height="20px">
-                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                         d="M2.795,24.453 L10.223,17.032 C11.750,18.108 13.611,18.742 15.622,18.742 C20.802,18.742 25.000,14.547 25.000,9.372 C25.000,4.197 20.802,0.001 15.622,0.001 C10.443,0.001 6.243,4.197 6.243,9.372 C6.243,11.391 6.884,13.259 7.971,14.788 L0.546,22.206 C-0.135,22.887 -0.187,23.949 0.432,24.567 C1.051,25.185 2.114,25.134 2.795,24.453 ZM15.622,3.126 C19.068,3.126 21.873,5.928 21.873,9.372 C21.873,12.816 19.068,15.617 15.622,15.617 C12.175,15.617 9.371,12.816 9.371,9.372 C9.371,5.928 12.175,3.126 15.622,3.126 Z"/>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                  <a href="projects/project-6.html" class="project" data-project="project-4">
-                    <div class="project--block">
-                      <span class="project--teaser" style="background: url(img/project-images/project-front-thumb-6.jpg) top center no-repeat; background-size: cover;"></span>
-                      <h3 class="project--title reversed"><span>Gray Line Alaska</span></h3>
-                      <div class="project--brief">
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          HTML
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          CSS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          JS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          WordPress
-                        </span>
-                      </div>
-                    </div>
-
-                    <span class="project--view">
-                      <svg version="1.1" viewBox="0 0 25 25" preserveAspectRatio="xMinYMin meet" class="svg-content"  width="20px" height="20px">
-                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                         d="M2.795,24.453 L10.223,17.032 C11.750,18.108 13.611,18.742 15.622,18.742 C20.802,18.742 25.000,14.547 25.000,9.372 C25.000,4.197 20.802,0.001 15.622,0.001 C10.443,0.001 6.243,4.197 6.243,9.372 C6.243,11.391 6.884,13.259 7.971,14.788 L0.546,22.206 C-0.135,22.887 -0.187,23.949 0.432,24.567 C1.051,25.185 2.114,25.134 2.795,24.453 ZM15.622,3.126 C19.068,3.126 21.873,5.928 21.873,9.372 C21.873,12.816 19.068,15.617 15.622,15.617 C12.175,15.617 9.371,12.816 9.371,9.372 C9.371,5.928 12.175,3.126 15.622,3.126 Z"/>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                  <a href="projects/project-7.html" class="project" data-project="project-5">
-                    <div class="project--block">
-                      <span class="project--teaser" style="background: url(img/project-images/project-front-thumb-7.jpg) top center no-repeat; background-size: cover;"></span>
-                      <h3 class="project--title reversed"><span>Tacoma E.D.B.</span></h3>
-                      <div class="project--brief">
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          HTML
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          CSS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          JS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          WordPress
-                        </span>
-                      </div>
-                    </div>
-
-                    <span class="project--view">
-                      <svg version="1.1" viewBox="0 0 25 25" preserveAspectRatio="xMinYMin meet" class="svg-content"  width="20px" height="20px">
-                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                         d="M2.795,24.453 L10.223,17.032 C11.750,18.108 13.611,18.742 15.622,18.742 C20.802,18.742 25.000,14.547 25.000,9.372 C25.000,4.197 20.802,0.001 15.622,0.001 C10.443,0.001 6.243,4.197 6.243,9.372 C6.243,11.391 6.884,13.259 7.971,14.788 L0.546,22.206 C-0.135,22.887 -0.187,23.949 0.432,24.567 C1.051,25.185 2.114,25.134 2.795,24.453 ZM15.622,3.126 C19.068,3.126 21.873,5.928 21.873,9.372 C21.873,12.816 19.068,15.617 15.622,15.617 C12.175,15.617 9.371,12.816 9.371,9.372 C9.371,5.928 12.175,3.126 15.622,3.126 Z"/>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                  <a href="projects/project-8.html" class="project" data-project="project-6">
-                    <div class="project--block">
-                      <span class="project--teaser" style="background: url(img/project-images/project-front-thumb-8.jpg) top center no-repeat; background-size: cover;"></span>
-                      <h3 class="project--title reversed"><span>TVW</span></h3>
-                      <div class="project--brief">
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          HTML
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          CSS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          JS
-                        </span>
-
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          WordPress
-                        </span>
-                      </div>
-                    </div>
-
-                    <span class="project--view">
-                      <svg version="1.1" viewBox="0 0 25 25" preserveAspectRatio="xMinYMin meet" class="svg-content"  width="20px" height="20px">
-                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                         d="M2.795,24.453 L10.223,17.032 C11.750,18.108 13.611,18.742 15.622,18.742 C20.802,18.742 25.000,14.547 25.000,9.372 C25.000,4.197 20.802,0.001 15.622,0.001 C10.443,0.001 6.243,4.197 6.243,9.372 C6.243,11.391 6.884,13.259 7.971,14.788 L0.546,22.206 C-0.135,22.887 -0.187,23.949 0.432,24.567 C1.051,25.185 2.114,25.134 2.795,24.453 ZM15.622,3.126 C19.068,3.126 21.873,5.928 21.873,9.372 C21.873,12.816 19.068,15.617 15.622,15.617 C12.175,15.617 9.371,12.816 9.371,9.372 C9.371,5.928 12.175,3.126 15.622,3.126 Z"/>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-
-                <!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                  <a href="projects/project-7.html" class="project" data-project="project-7">
-                    <div class="project--block">
-                      <span class="project--teaser" style="background: url(img/project-images/project-front-thumb-9.jpg) top center no-repeat; background-size: cover;"></span>
-                      <h3 class="project--title reversed"><span>Mary Bridge Childrens</span></h3>
-                      <div class="project--brief">
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          HTML
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          CSS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          JS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          PHP
-                        </span>
-                      </div>
-                    </div>
-
-                    <span class="project--view">
-                      <svg version="1.1" viewBox="0 0 25 25" preserveAspectRatio="xMinYMin meet" class="svg-content"  width="20px" height="20px">
-                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                         d="M2.795,24.453 L10.223,17.032 C11.750,18.108 13.611,18.742 15.622,18.742 C20.802,18.742 25.000,14.547 25.000,9.372 C25.000,4.197 20.802,0.001 15.622,0.001 C10.443,0.001 6.243,4.197 6.243,9.372 C6.243,11.391 6.884,13.259 7.971,14.788 L0.546,22.206 C-0.135,22.887 -0.187,23.949 0.432,24.567 C1.051,25.185 2.114,25.134 2.795,24.453 ZM15.622,3.126 C19.068,3.126 21.873,5.928 21.873,9.372 C21.873,12.816 19.068,15.617 15.622,15.617 C12.175,15.617 9.371,12.816 9.371,9.372 C9.371,5.928 12.175,3.126 15.622,3.126 Z"/>
-                      </svg>
-                    </span>
-                  </a>
-                </div> -->
-
-                <!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                  <a href="projects/project-8.html" class="project" data-project="project-8">
-                    <div class="project--block">
-                      <span class="project--teaser" style="background: url(img/project-images/project-front-thumb-10.jpg) top center no-repeat; background-size: cover;"></span>
-                      <h3 class="project--title reversed"><span>West Pierce Fire & Rescue</span></h3>
-                      <div class="project--brief">
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          HTML
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          CSS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          JS
-                        </span>
-                        <span>
-                          <i>
-                            <svg version="1.1" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin meet" class="svg-content" width="16px" height="12px" >
-                              <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                             d="M16.875,0.105 L7.500,9.579 L3.125,5.158 L-0.000,8.316 L7.500,15.895 L20.000,3.263 L16.875,0.105 Z"/>
-                            </svg>
-                          </i>
-                          WordPress
-                        </span>
-                      </div>
-                    </div>
-
-                    <span class="project--view">
-                      <svg version="1.1" viewBox="0 0 25 25" preserveAspectRatio="xMinYMin meet" class="svg-content"  width="20px" height="20px">
-                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                         d="M2.795,24.453 L10.223,17.032 C11.750,18.108 13.611,18.742 15.622,18.742 C20.802,18.742 25.000,14.547 25.000,9.372 C25.000,4.197 20.802,0.001 15.622,0.001 C10.443,0.001 6.243,4.197 6.243,9.372 C6.243,11.391 6.884,13.259 7.971,14.788 L0.546,22.206 C-0.135,22.887 -0.187,23.949 0.432,24.567 C1.051,25.185 2.114,25.134 2.795,24.453 ZM15.622,3.126 C19.068,3.126 21.873,5.928 21.873,9.372 C21.873,12.816 19.068,15.617 15.622,15.617 C12.175,15.617 9.371,12.816 9.371,9.372 C9.371,5.928 12.175,3.126 15.622,3.126 Z"/>
-                      </svg>
-                    </span>
-                  </a>
-                </div> -->
-
-              </div>
-          </div>
+              <a class="cta--email" href="mailto:fake@mail.com" data-mail-user="sdozeman" data-mail-domain="gmail"><strong>sdozeman<span class="color--red">@</span>gmail<span class="color--yellow">.</span>com</strong></a>
+            </div>
         </article>
       </main>
+    </div>
 
-      <footer class="site-footer">
-        <div class="container">
-          <p>Please note this website is currently under active development - content, functionality, code and design are all being tested and tailored as the build progresses. Please come back soon and see how it's coming. </p>
-          &copy; 2018 - Sean Dozeman
-        </div>
-      </footer>
-      <button class="off--canvas-trigger">Off-Canvas</button>
-      <div class="off--canvas">
-        <div class="off--canvas-content">
-          <a href="#" class="off--canvas-closer">
-            <span><span>Close</span></span>
-          </a>
-            <div class="container">
-
-              <div class="off--canvas-loader" id="ocl">
-                <div class="loader">
-                  <svg version="1.1" id="Layer_1" viewBox="0 0 65 65" style="enable-background:new 0 0 50 50;" preserveAspectRatio="xMinYMin meet" class="svg-content">
-                    <rect x="0" y="2" width="14" height="56" transform="skewY(7.5)">
-                      <animate attributeName="opacity" attributeType="XML" values="1; .33; 1" begin="0s" dur="0.6s" repeatCount="indefinite" />
-                      <animate attributeName="height" attributeType="XML" values="28; 56; 28" begin="0s" dur="0.6s" repeatCount="indefinite" />
-                      <animate attributeName="y" attributeType="XML" values="14; 0; 14" begin="0s" dur="0.6s" repeatCount="indefinite" />
-                    </rect>
-                    <rect x="16" y="2" width="14" height="56" transform="skewY(7.5)">
-                      <animate attributeName="opacity" attributeType="XML" values="1; .33; 1" begin="0.15s" dur="0.6s" repeatCount="indefinite" />
-                      <animate attributeName="height" attributeType="XML" values="28; 56; 28" begin="0.15s" dur="0.6s" repeatCount="indefinite" />
-                      <animate attributeName="y" attributeType="XML" values="14; 0; 14" begin="0.15s" dur="0.6s" repeatCount="indefinite" />
-                    </rect>
-                    <rect x="32" y="2" width="14" height="56" transform="skewY(7.5)">
-                      <animate attributeName="opacity" attributeType="XML" values="1; .33; 1" begin="0.3s" dur="0.6s" repeatCount="indefinite" />
-                      <animate attributeName="height" attributeType="XML" values="28; 56; 28" begin="0.3s" dur="0.6s" repeatCount="indefinite" />
-                      <animate attributeName="y" attributeType="XML" values="14; 0; 14" begin="0.3s" dur="0.6s" repeatCount="indefinite" />
-                    </rect>
-                  </svg>
-                </div>
-              </div>
-
-              <div class="content" id="occ">
-
-              </div>
-            </div><!-- container -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="grid just--between align--middle">
+          <div class="grid__item">Made with <span class="mwl">Love</span> & <span class="mwc">Coffee</span></div>
+          <div class="grid__item">&copy; 2019 Sean Dozeman</div>
         </div>
       </div>
-    </section>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/parallaxify.js"></script>
-    <script src="js/min/main-min.js"></script>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>      
+    <script type='text/javascript' src='assets/dist/js/vendor.js'></script>
+    <script type='text/javascript' src='assets/dist/js/scripts.js?v=2'></script>
   </body>
 </html>

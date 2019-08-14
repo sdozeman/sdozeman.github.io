@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'objective';
+    src: url('../fonts/objective/Objective-Regular.otf') format('opentype'),
+         url('../fonts/objective/Objective-Regular.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'objective';
+    src: url('../fonts/objective/Objective-Bold.otf') format('opentype'),
+         url('../fonts/objective/Objective-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'objective';
+    src: url('../fonts/objective/Objective-ExtraBold.otf') format('opentype'),
+         url('../fonts/objective/Objective-ExtraBold.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'objective';
+    src: url('../fonts/objective/Objective-Light.otf') format('opentype'),
+         url('../fonts/objective/Objective-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'objective';
+    src: url('../fonts/objective/Objective-Italic.otf') format('opentype'),
+         url('../fonts/objective/Objective-Italic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'objective';
+    src: url('../fonts/objective/Objective-Bold-Italic.otf') format('opentype'),
+         url('../fonts/objective/Objective-Bold-Italic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'objective';
+    src: url('../fonts/objective/Objective-Light-Italic.otf') format('opentype'),
+         url('../fonts/objective/Objective-Light-Italic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}

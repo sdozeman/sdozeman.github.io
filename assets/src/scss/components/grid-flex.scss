@@ -1,0 +1,78 @@
+/*
+  Flexbox Grid
+
+  - About: 
+    Grid based off of http://flexboxgrid.com/ with customized edits
+    Optional gutter, alignment, justification settings.
+
+    - Use gutter, alignment, justification modifiers directly on `.grid` div.
+    - Use width (scss/abstractions/widths.scss), order modifiers directly on `.grid__item` div.
+
+    Mobile first - define mobile width first, then your breakpoint modifiers, see example below.
+
+  - Markup:
+    <div class="grid">
+      <div class="grid__item one-whole md-one-half">
+        <p>Content</p>
+      </div>
+    </div>
+
+  - Considerations:
+    Flexbox doesn't always play nicely in IE11 or Edge, 
+    any padding on a flex-element child (e.g. grid__item)
+    can cause the element to display improperly. 
+
+    Make sure to include a wrapper element directly inside
+    of the grid__item element if you want to add padding.
+*/
+
+
+/* ================================================= */
+
+// - Base Styles
+%grid {
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* ================================================= */
+.grid {
+  @extend %grid;
+  
+  // Define justification, alignment, and breakpoint classes
+  @include define-justify($base-class);
+  @include define-alignment($base-class);
+  @include define-gutter-bpclasses($base-class); 
+  
+  // Define gutters
+  @include define-gutters($gutter-norm);
+
+  // Helper classes, reverse row, flush grid, etc.
+  &.row--reverse { flex-direction: row-reverse; }
+  &.grid--flush { @include define-gutters(0); }
+
+  // Scope grid item to grid
+  .grid__item { 
+    flex: 0 0 auto; 
+    @include define-order($base-class);
+  }
+}
+
+// Setup breakpoint specific overrides
+@each $key, $value in $breakpoints {
+    @if $value {
+        @media only screen and (min-width: #{$value + 1px}) {
+            .grid {  
+                @include define-justify("#{$key}-"); 
+                @include define-alignment("#{$key}-");
+                @include define-gutter-bpclasses("#{$key}-"); 
+            }
+
+            .grid__item { 
+                @include define-order("#{$key}-");
+            }
+        }
+    }
+}

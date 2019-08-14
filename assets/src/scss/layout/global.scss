@@ -1,0 +1,109 @@
+* { box-sizing: border-box; }
+
+img { max-width: 100%; }
+
+article {
+    padding: $article-spacing-unit/2 0;
+
+    @include breakpoint-min($main-breakpoint) {
+        padding: $article-spacing-unit 0;
+    }
+
+    &:focus { outline: 0; }
+
+    &.site__about {
+        overflow: hidden;
+        position: relative;
+        background: $about-gray;
+        padding-bottom: ($article-spacing-unit*2.25);
+
+        .hey-its-me {
+            @include breakpoint($main-breakpoint){
+                width: 300px;
+                max-width: 100%;
+
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @include breakpoint-min($bp-md){
+            padding-bottom: ($article-spacing-unit*1.5);
+        }
+
+        .container {
+            @include z-index(1, relative);
+        }
+
+        &:before, &:after {
+            content: "sass less css3 javascript es6 photoshop illustrator sketch php html5 shopify wordpress twig timber grunt gulp webpack node npm ";
+            display: inline;
+            overflow: visible;
+            white-space: nowrap;
+            
+            @include z-index(0, absolute);
+            bottom: ($article-spacing-unit*1.5);
+
+            @include font-size(60px);
+            color: $footer-copy;
+            font-weight: bold;
+
+            left: 0;
+            animation: animatedLeft 120s linear infinite;
+        }
+
+        &:after {
+            @include font-size(40px);
+            left: auto;
+            right: 0;
+            animation: animatedRight 120s linear infinite;
+            bottom: ($article-spacing-unit);
+        }
+    }
+
+    &.site__cta {
+        @include z-index(1, relative);
+
+        height: 0;
+        line-height: 0;
+        max-width: 930px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background: white;
+
+        padding: ($article-spacing-unit/1.5) 0;
+        margin-top: -($article-spacing-unit/1.5);
+        margin-bottom: -($article-spacing-unit/1.5);
+
+        a {
+            color: $gray;
+            display: block;
+            &:hover { text-decoration: underline; }
+        }
+
+        .cta--email {
+            font-size: 30px;
+            color: $gray-dark;
+
+            @include breakpoint-min($main-breakpoint) {
+                font-size: 60px;
+            }
+
+            &:hover { color: $blue; }
+        }
+    }
+}
+
+@keyframes animatedLeft {
+    from { left: 0%; }
+    99%  { left: -100%; }
+    100% { left: 0%; }
+}
+
+@keyframes animatedRight {
+    from { right: 0%; }
+    99%  { right: -100%; }
+    100% { right: 0%; }
+}
